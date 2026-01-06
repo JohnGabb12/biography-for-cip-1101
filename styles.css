@@ -34,12 +34,12 @@ main {
 }
 
 header h1 {
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Bookman Old Style', serif;
     margin-bottom: 4px;
 }
 
 article h2 {
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Bookman Old Style', serif;
 }
 
 header p {
