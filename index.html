@@ -5,40 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="VALENCERINA, JOHN GABRIELLE">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
     <title>Ink of My Own Story</title>
-    <link rel="icon"
-        href="https://lh3.googleusercontent.com/rd-d/ALs6j_GeJPz6889M--TCq54Ccztj3lsiMHoz01DPMJYDsqPd_coDnKXUASvtecO_J417QpYrtBDN6tsrMHnuFngfTedfUtgvvIHCkU2RW0Vo3Jmc14zm-IWF9kC6Hqaa47cyeRejFqB97NUlgsH43obtAnWynuIajRgS-K0kzSMj-hII8ch0xwypCBcl098EtJAprH4vsod8Mg7TGxSDgkFvzj-RKK0yPl46k4T0zCARXu0crFz0ueIP9JffwbEkc1S2V70ns0urLAccsiAyK-q73jozI0JXYOLcvJ0tW0LvNqVbygQNzXXa1r47nbe0wdbn1qx5nvIsgKY4aWtZQqYUH8kMTXdCwgP0eK7nUuYzuCdMdpOg8V40LbVVmIR1qGAjo839BU5EcXNaLUvfeeajwXKwa68m97gPLkPiIfdJTMGigo2Jkg3CnuLxvCsaAY17dWHub9CEYNhDDVjo1QRkdCkArGcpdMLM29tvmlaA_jILjjts2Ai6AJFQYgO_AhublnKcF0n_iUC7MJ2cZD2FTYoXg_7FsXLkxEg1IzSVRjJiQ3D70qMljb0mqRTAlboGor3IKUVq1srXdMCapjkEE9yvAaVvxA06NGiWgyfI2ab3GikdObFLscc346n0UTLpX6naT-7y5v04jLSGLRq4RVPxwEZ14BH75pnqIISDAtCQQfWaDg716vwKOvph2CFQDWtHLiqdUT-WPS3r9XimmdIYDYH0FKsxLWNAVK8a5bfBRbPwZ9ay5P_jRxC_IB9zODsfo6PEfMhet17NQnJj2U7S250c6B30pMcsMjhoHam1XXhrHF4S0C5DrdXt7UKbHmELssyQbYtu4HSjqB0wYiXJ-GhGFt7YG7e01bmiVfr8SXO0X0Iyg6e_jHXmd6XV2HDliEDajjzUoY0mf_qUJrctkMOz6OXvDA2Yaq4skYd-48dqWRPpEvpjwRsRbefR6svmjgZ85YnYNv9D4-QkcgDcWzwP8uM0_ypC4BNaqALp6YbYeZLElot0EZ9MARfLl1JzDmYvRw=w1920-h945?auditContext=forDisplay">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0px;
-            background-color: #e0f0ff;
+        main.biography-content sup {
+            color: var(--accent-color);
+        }
+        main.biography-content article{
+            text-align: justify;
+            padding-top: 3rem;
         }
     </style>
 </head>
 
 <body>
-
     <header>
-        <h1><i>Ink of My Own Story</i></h1>
-        <b>
-            <p>By <u>John Gabrielle Valencerina</u></p>
-        </b>
-        <br />
+        <h1>
+            <em>
+                Ink of My Own Story
+            </em>
+        </h1>
+        <div style="margin-bottom: 40px;">
+            <b>
+                <p>
+                    By <u>John Gabrielle Valencerina</u>
+                </p>
+            </b>
+        </div>
+
         <nav>
-            <a href="#childhood">Childhood Years</a> |
-            <a href="#teenage">Teenage Years</a> |
-            <a href="#college">College Years</a>
+            <a href="#childhood" class="article-link">Childhood Years</a>
+            | <!-- separator -->
+            <a href="#teenage" class="article-link">Teenage Years</a>
+            | <!-- separator -->
+            <a href="#college" class="article-link">College Years</a>
         </nav>
     </header>
     <div>
-        <main>
+        <main class="biography-content">
             <!-- Childhood Section -->
             <article id="childhood">
                 <h2>Childhood Years</h2>
-                <p style="text-align: justify;">My journey growing up began with an interest for drawing.<sup>1</sup>
+                <p>My journey growing up began with an interest for drawing.<sup>1</sup>
                     I was drawing using those ballpens my father uses in his job.<sup>2</sup> As soon as they noticed
                     this, crayons and pencils were in my hand in the following moment.<sup>3</sup> Each day, pencils and
                     crayons were my toys which unlocked stories in my imagination.<sup>4</sup> Before I could learn to
@@ -51,7 +66,8 @@
                     Around that time I started wearing glasses and made the world look sharper and more detailed than
                     ever.<sup>11</sup> Even those little things; the texture of a tree bark, the way shadows are formed,
                     the waves of the waters, or the grass leaves of the plains, made my drawing a bit more
-                    detailed.<sup>12</sup> Every new ideas and observations were on my paper the next second.<sup>13</sup>
+                    detailed.<sup>12</sup> Every new ideas and observations were on my paper the next
+                    second.<sup>13</sup>
                     Over time, I realized that for me, art was never just a hobby of some sorts, but also a way to
                     communicate my ideas, my imagination, feelings if I had one, and thoughts.<sup>14</sup> My sketches
                     became more detailed and more colorful the way how I saw my world.<sup>15</sup> These early
@@ -60,23 +76,28 @@
                     to.<sup>17</sup> This connection guided my path throughout my childhood, at present, and towards the
                     future.<sup>18</sup> From those crayons and pencils which I first held, and the ballpen that led me
                     to development, my passion for creating shaped my childhood as a whole.<sup>19</sup> It became a
-                    part of who I am.<sup>20</sup></p>
+                    part of who I am.<sup>20</sup>
+                </p>
             </article>
 
             <!-- Teenage Years Section -->
             <article id="teenage">
                 <h2>Teenage Years</h2>
-                <p style="text-align: justify;">My teenage years were a time of growth and change in my life.<sup>1</sup>
+                <p>
+                    My teenage years were a time of growth and change in my
+                    life.<sup>1</sup>
                     I became close to a small group of friends who are also artistic and enjoyed drawing as much as I
                     did.<sup>2</sup> We shared sketches and stories during breaks, filled up sketchbooks, modeled clays,
                     painted canvases, and drew on whiteboards.<sup>3</sup> Although these friendships helped my
                     creativity grow, these things distracted me from my schoolwork.<sup>4</sup> Time after time,
-                    teachers reminded me to focus on my studies, but my attention always goes back to my drawings.<sup>5</sup>
+                    teachers reminded me to focus on my studies, but my attention always goes back to my
+                    drawings.<sup>5</sup>
                     Over time, our group of artist friends split up due to reasons, but my passion grew stronger than
                     ever.<sup>6</sup> Even quarantine did not stop me from communicating with my friends.<sup>7</sup>
                     Discovering video games became an important turning point for me, not because of addiction, but
                     because on how artwork could come to life through those movement and interactions.<sup>8</sup> I
-                    became curious on how these digital worlds were made and how those artistic visuals change.<sup>9</sup>
+                    became curious on how these digital worlds were made and how those artistic visuals
+                    change.<sup>9</sup>
                     It lead me to programming which felt like discovering a new tool like those pencil and crayons
                     during my first journey.<sup>10</sup> With programming, I could take ideas that had stayed in papers
                     and bring them to life on screen.<sup>11</sup> I spent countless hours trying to figure out how
@@ -92,13 +113,15 @@
                     documentation after documentation, or tutorials after tutorials, each leading me to find the answer
                     to my problems.<sup>18</sup> Creativity became a part of my identity, one that I am willing to
                     nurture and protect.<sup>19</sup> Each line in a sketch, each variable in a code, and each idea in
-                    my imagination contributed to the direction I would eventually take in life.<sup>20</sup></p>
+                    my imagination contributed to the direction I would eventually take in life.<sup>20</sup>
+                </p>
             </article>
 
             <!-- College Section -->
             <article id="college">
                 <h2>College Years</h2>
-                <p style="text-align: justify;">My college experience was unlike what I expected.<sup>1</sup> Unlike
+                <p>
+                    My college experience was unlike what I expected.<sup>1</sup> Unlike
                     other colleagues who lived their lives in this country, for me it was a rollercoaster ride of an
                     experience.<sup>2</sup> Adjusting took me longer than I expected, well not because of the language,
                     but because on how lively the streets are, the darker side of humanity, and how the people live
@@ -126,14 +149,14 @@
                     others can also experience.<sup>18</sup> Every success and failures teaches me new things like
                     discipline, creativity, and adaptability.<sup>19</sup> With each projects and each breakthrough, I
                     feel motivated to continue pushing the boundaries of what I can create and accomplish both art and
-                    technology.<sup>20</sup></p>
+                    technology.<sup>20</sup>
+                </p>
             </article>
         </main>
     </div>
     <footer>
-        <p>&copy; 2025 By me of course <mark>Valencerina</mark>. All rights reserved.</p>
+        <p>&copy; 2025 By me of course <em>Valencerina</em>. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
