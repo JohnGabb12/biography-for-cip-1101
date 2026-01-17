@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="VALENCERINA, JOHN GABRIELLE">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        rel="stylesheet"
-        href="
+      rel="stylesheet"
+      href="
             https://fonts.googleapis.com/css2
             ?family=EB+Garamond:ital,wght@0,400..800;1,400..800
             &family=Lexend:wght@100..900
@@ -20,155 +19,198 @@
             &family=Poppins:ital,wght@0,100..900;1,100..900
             &display=swap
         "
-    >
+    />
 
-    <title>The Inevitable Decline of an Unofficial University that Created Developers</title>
+    <title>
+      The Inevitable Decline of an Unofficial University that Created Developers
+    </title>
     <style>
-        .blog-date {
-            font-size: 0.9em;
-            margin-bottom: 10px;
-            width: 100%;
-            height: 3.5rem;
-            display: flex;
-            align-items: center;
-        }
+      .blog-date {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+      }
 
-        .blog-author {
-            margin-bottom: 1em;
-            text-align: center;
-        }
+      .blog-author {
+        margin-bottom: 1em;
+        text-align: center;
+      }
 
-        .blog-img img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
+      .blog-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
 
-        .blog-title {
-            line-height: 1cm;
-            margin-bottom: 0.5em;
-            margin-top: 3rem;
-            text-align: center;
-        }
+      .blog-title {
+        line-height: 1cm;
+        margin-bottom: 0.5em;
+        margin-top: 3rem;
+        text-align: center;
+      }
 
-        .body q {
-            font-style: italic;
-            text-decoration-line: underline;
-            text-decoration-color: var(--secondary-color);
-            text-decoration-thickness: 0.3em;
-            text-underline-offset: 0.1em;
-        }
+      .body q {
+        font-style: italic;
+        text-decoration-line: underline;
+        text-decoration-color: var(--secondary-color);
+        text-decoration-thickness: 0.3em;
+        text-underline-offset: 0.1em;
+      }
 
-        .body mark,
-        .introduction mark {
-            background-color: var(--no-color);
-            color: var(--text-light-mark);
-            font-weight: bold;
-        }
+      .body mark,
+      .introduction mark {
+        background-color: var(--no-color);
+        color: var(--text-light-mark);
+        font-weight: bold;
+      }
 
-        hr {
-            border: none;
-            border-top: 1px solid var(--base-color-300);
-            margin-bottom: 2rem;
-        }
+      hr {
+        border: none;
+        border-top: 1px solid var(--base-color-300);
+        margin-bottom: 2rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Technology Blog Story</h1>
-        <nav>
-            <a href="index.html" class="article-link">Home</a>
-        </nav>
+      <h1>Technology Blog Story</h1>
+      <nav>
+        <a href="index.html" class="article-link">Home</a>
+      </nav>
     </header>
     <main>
-        <article>
+      <article>
+        <!-- Heading -->
+        <h2 class="blog-title">
+          The Inevitable Decline of an Unofficial University that Created
+          Developers
+        </h2>
+        <section class="introduction">
+          <p>
+            Throughout our life as a developer, tinkering and developing
+            applications, fixing coding problems, or anything tech related. You
+            may or may not have heard of <mark>Stack Overflow</mark>. It is an
+            application that helped developers get "unstuck" in their workflow
+            which regarded it as a savior. Modern developers nowadays have never
+            even heard of this so called "Where developers actually learn" as
+            <abbr title="Artificial Intelligence">AI</abbr> or
+            <abbr title="Large Language Models">LLMs</abbr>
+            became the number one Q&A forum for modern developers.
+          </p>
+        </section>
 
-            <!-- Heading -->
-            <h2 class="blog-title">The Inevitable Decline of an Unofficial University that Created Developers</h2>
-            <section class="introduction">
-                <p>
-                    Throughout our life as a developer, tinkering and developing applications, fixing coding problems,
-                    or anything tech related. You may or may not have heard of <mark>Stack Overflow</mark>. It is an
-                    application that
-                    helped developers get "unstuck" in their workflow which regarded it as a savior. Modern developers
-                    nowadays have never even heard of this so called "Where developers actually learn" as <abbr
-                        title="Artificial Intelligence">AI</abbr> or <abbr title="Large Language Models">LLMs</abbr>
-                    became the number one Q&A forum for modern developers.
-                </p>
-            </section>
+        <!-- Blog Image -->
+        <section class="author-section">
+          <div class="blog-author">
+            By <mark style="font-weight: bold">John Gabrielle Valencerina</mark>
+          </div>
+          <picture class="blog-img">
+            <source
+              srcset="./assets/tech-blog-story-img.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/tech-blog-story-img.webp"
+              type="image/webp"
+            />
+            <img src="./assets/tech-blog-story-img.jpg" alt="Stack Overflow" />
+          </picture>
+          <div class="blog-date">Tuesday, January 13, 2026, 3 min Read</div>
+        </section>
 
-            <!-- Blog Image -->
-            <section class="author-section">
-                <div class="blog-author">By <mark style="font-weight: bold;">John Gabrielle Valencerina</mark></div>
-                <picture class="blog-img">
-                    <source srcset="./assets/tech-blog-story-img.avif" type="image/avif">
-                    <source srcset="./assets/tech-blog-story-img.webp" type="image/webp">
-                    <img src="./assets/tech-blog-story-img.jpg" alt="Stack Overflow">
-                </picture>
-                <div class="blog-date">Tuesday, January 13, 2026, 3 min Read</div>
-            </section>
+        <hr />
 
-            <hr />
-
-            <!-- Blog Content -->
-            <section class="body">
-                The rise of <abbr title="Large Language Models">LLMs</abbr> and its influence to developers raises the
-                big question:
-                <blockquote>
-                    Does <abbr title="Large Language Models">LLMs</abbr> make <abbr title="Stack Overflow">SO</abbr>
-                    irrelevant?
-                </blockquote>
-                <p>
-                    There were many opinions of this throughout the internet like <q><abbr
-                            title="Artificial Intelligence">AI</abbr> doesn't kill <abbr
-                            title="Stack Overflow">SO</abbr></q>, <q>The downfall of contributions to <abbr
-                            title="Stack Overflow">SO</abbr> would actually kill <abbr
-                            title="Large Language Models">LLMs</abbr> as well</q>, or <q><abbr
-                            title="Artificial Intelligence">AI</abbr>'s answers are not as
-                        valuable as Stack's</q>, but my answer to that question would be that <mark>it is not about
-                        killing
-                        Stack, but changing how the developers use it and it's ecosystem.</mark>
-                </p>
-                <p>
-                    Although <abbr title="Artificial Intelligence">AI</abbr> itself would not embarrass you like from my
-                    experience where every question I ask to Stack would actually be a repost from somewhere 25 years
-                    ago
-                    and get called out, but in reality, <mark>Stack Overflow's answers are as valuable as an answer in
-                        <abbr title="Artificial Intelligence">AI</abbr> when it comes to more complex programming
-                        questions.</mark>
-                </p>
-                <p>
-                    There was a graph released that actually may or may not have answered the question.
-                </p>
-                <picture class="blog-img">
-                    <img src="./assets/tech-blog-story-graph-img.jpg" alt="Stack Overflow Graph">
-                </picture>
-                <small>Sum of questions and answers posted to Stack Overflow from mid-2008 to April 2025</small>
-                <p>
-                    The graph itself showcased the number of questions in the life time of <abbr
-                        title="Stack Overflow">SO</abbr> itself. The year when
-                    ChatGPT released showed a steep deterioration to the number of questions over the past 2-3 years
-                    post-<abbr title="Large Language Models">LLMs</abbr>. This deterioration signaled the inevitable
-                    decline where one could not recover from up to the point where they either shut down or sell the
-                    site itself for pennies.
-                </p>
-                <p>
-                    Through out all of these, we may need to slowly not be dependent anymore on <abbr
-                        title="Stack Overflow">SO</abbr> itself before we get affected by its disappearance in the
-                    future, but as developers, even if the tools we use will continue to change overtime, the need for
-                    the minds of critical thinking will not. While <abbr title="Large Language Models">LLMs</abbr> excel
-                    at providing fast solutions and <abbr title="Stack Overflow">SO</abbr> with verified solutions and
-                    contexts of the problem. <mark>Knowing when to use each of these would become a great skill for
-                        modern
-                        developers.</mark>
-                </p>
-            </section>
-        </article>
+        <!-- Blog Content -->
+        <section class="body">
+          The rise of <abbr title="Large Language Models">LLMs</abbr> and its
+          influence to developers raises the big question:
+          <blockquote>
+            Does <abbr title="Large Language Models">LLMs</abbr> make
+            <abbr title="Stack Overflow">SO</abbr>
+            irrelevant?
+          </blockquote>
+          <p>
+            There were many opinions of this throughout the internet like
+            <q
+              ><abbr title="Artificial Intelligence">AI</abbr> doesn't kill
+              <abbr title="Stack Overflow">SO</abbr></q
+            >,
+            <q
+              >The downfall of contributions to
+              <abbr title="Stack Overflow">SO</abbr> would actually kill
+              <abbr title="Large Language Models">LLMs</abbr> as well</q
+            >, or
+            <q
+              ><abbr title="Artificial Intelligence">AI</abbr>'s answers are not
+              as valuable as Stack's</q
+            >, but my answer to that question would be that
+            <mark
+              >it is not about killing Stack, but changing how the developers
+              use it and it's ecosystem.</mark
+            >
+          </p>
+          <p>
+            Although <abbr title="Artificial Intelligence">AI</abbr> itself
+            would not embarrass you like from my experience where every question
+            I ask to Stack would actually be a repost from somewhere 25 years
+            ago and get called out, but in reality,
+            <mark
+              >Stack Overflow's answers are as valuable as an answer in
+              <abbr title="Artificial Intelligence">AI</abbr> when it comes to
+              more complex programming questions.</mark
+            >
+          </p>
+          <p>
+            There was a graph released that actually may or may not have
+            answered the question.
+          </p>
+          <picture class="blog-img">
+            <img
+              src="./assets/tech-blog-story-graph-img.jpg"
+              alt="Stack Overflow Graph"
+            />
+          </picture>
+          <small
+            >Sum of questions and answers posted to Stack Overflow from mid-2008
+            to April 2025</small
+          >
+          <p>
+            The graph itself showcased the number of questions in the life time
+            of <abbr title="Stack Overflow">SO</abbr> itself. The year when
+            ChatGPT released showed a steep deterioration to the number of
+            questions over the past 2-3 years post-<abbr
+              title="Large Language Models"
+              >LLMs</abbr
+            >. This deterioration signaled the inevitable decline where one
+            could not recover from up to the point where they either shut down
+            or sell the site itself for pennies.
+          </p>
+          <p>
+            Through out all of these, we may need to slowly not be dependent
+            anymore on <abbr title="Stack Overflow">SO</abbr> itself before we
+            get affected by its disappearance in the future, but as developers,
+            even if the tools we use will continue to change overtime, the need
+            for the minds of critical thinking will not. While
+            <abbr title="Large Language Models">LLMs</abbr> excel at providing
+            fast solutions and <abbr title="Stack Overflow">SO</abbr> with
+            verified solutions and contexts of the problem.
+            <mark
+              >Knowing when to use each of these would become a great skill for
+              modern developers.</mark
+            >
+          </p>
+        </section>
+      </article>
     </main>
     <footer>
-        <p>&copy; 2025 By me of course <mark>Valencerina</mark>. All rights reserved.</p>
+      <p>
+        &copy; 2025 By me of course <mark>Valencerina</mark>. All rights
+        reserved.
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
