@@ -89,6 +89,11 @@ article {
   margin-bottom: 20px;
   font-size: var(--text-body-size);
   padding-bottom: 40px;
+
+  &.blog-post {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
 }
 
 main {
