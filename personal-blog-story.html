@@ -11,8 +11,18 @@
 
     <title>Post-Overseas: Discovering the Philippines as a Filipino</title>
     <style>
+      #tag {
+        background-color: var(--accent-color-100);
+        color: var(--text-light);
+        padding: 0.2em 0.6em;
+        border-radius: 0.3em;
+        width: fit-content;
+        font-weight: bold;
+        font-size: var(--text-small-size);
+        text-transform: uppercase;
+      }
+
       .blog-date {
-        font-size: 0.9em;
         margin-bottom: 10px;
         width: 100%;
         height: 3.5rem;
@@ -23,19 +33,61 @@
       .blog-author {
         margin-bottom: 1em;
         text-align: center;
+        font-size: var(--text-small-size);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2.25rem;
+
+        & #blog-author-separator {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: var(--base-color-400);
+        }
+      }
+
+      .blog-img-frame {
+        background-color: var(--secondary-color-100);
+        padding: 1em;
+        border-radius: 15px;
+
+        & span {
+          display: block;
+          margin-top: 0.5rem;
+          font-size: var(--text-small-size);
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+
+        & img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 15px;
+        }
       }
 
       .blog-img img {
         width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: 15px;
       }
 
       .blog-title {
-        line-height: 1cm;
+        line-height: 115%;
         margin-bottom: 0.5em;
-        margin-top: 3rem;
-        text-align: center;
+        margin-top: 1rem;
+        text-align: left;
+        font-size: 64px;
+        letter-spacing: 0.015em;
+        word-spacing: 0.01em;
+      }
+
+      .heading {
+        margin-top: 2rem;
       }
 
       .body q {
@@ -44,6 +96,13 @@
         text-decoration-color: var(--secondary-color);
         text-decoration-thickness: 0.3em;
         text-underline-offset: 0.1em;
+      }
+
+      .introduction,
+      .heading,
+      .body {
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
       }
 
       mark {
@@ -70,9 +129,12 @@
     <main>
       <article class="blog-post">
         <!-- Heading -->
-        <h2 class="blog-title">
-          Post-Overseas: Discovering the Philippines as a Filipino
-        </h2>
+        <section class="heading">
+          <div id="tag">Personal</div>
+          <h2 class="blog-title">
+            Post-Overseas: Discovering the Philippines as a Filipino
+          </h2>
+        </section>
         <section class="introduction">
           <p>
             I look Filipino. Well of course, by blood I am. People speak to me
@@ -88,17 +150,18 @@
         </section>
 
         <!-- Blog Image -->
-        <section class="author-section">
+        <section class="author-section" style="margin: 2rem 0">
           <div class="blog-author">
-            By <mark style="font-weight: bold">John Gabrielle Valencerina</mark>
+            <span>John Gabrielle Valencerina</span>
+            <div id="blog-author-separator"></div>
+            <span>Thursday, January 15, 2026</span>
+            <div id="blog-author-separator"></div>
+            <span>5 min read</span>
           </div>
           <picture class="blog-img">
             <img src="./assets/personal-blog-story-img.jpg" alt="Philippines" />
           </picture>
-          <div class="blog-date">Tuesday, January 15, 2026, 5 min Read</div>
         </section>
-
-        <hr />
 
         <!-- Blog Content -->
         <section class="body">
