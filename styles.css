@@ -65,6 +65,9 @@ h3 {
 
 header {
   font-size: var(--text-body-size);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 header,
@@ -82,7 +85,6 @@ a.article-link {
 }
 
 article {
-  background-color: var(--base-color-50);
   padding: 20px;
   padding-right: 40px;
   padding-left: 40px;
@@ -97,11 +99,19 @@ article {
 }
 
 main {
-  max-width: 1280px;
+  padding-left: 4.3%;
+  padding-right: 4.3%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: fit-content;
+}
+
+article {
+  width: 80%;
+  padding-left: 2.7vw;
+  padding-right: 2.7vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article p {
