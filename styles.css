@@ -3,10 +3,11 @@
   --primary-color-200: #4c252e;
   --primary-color: var(--primary-color-100);
 
-  --secondary-color-100: #bee6b1;
-  --secondary-color-200: #9bbb90;
+  --secondary-color-100: #7a6a9f;
+  --secondary-color-200: #635588;
   --secondary-color: var(--secondary-color-100);
 
+  --accent-color-50: #fff0f3;
   --accent-color-100: #ee7591;
   --accent-color-200: #cc647c;
   --accent-color-transparent: rgba(238, 117, 145, 0.2);
@@ -14,7 +15,7 @@
 
   --text-light: #ebdcd5;
   --text-dark: #442129;
-  --text-light-mark: var(--accent-color-100);
+  --text-light-mark: var(--secondary-color-100);
   --text-dark-mark: var(--accent-color-200);
 
   --base-color-50: #f7f2f0;
@@ -102,7 +103,7 @@ article {
   margin-bottom: 20px;
   font-size: var(--text-body-size);
   padding-bottom: 40px;
-  width: 1280px;
+  max-width: 1280px;
   padding-left: 2.7vw;
   padding-right: 2.7vw;
   margin-left: auto;
@@ -163,7 +164,7 @@ mark {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1280px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
