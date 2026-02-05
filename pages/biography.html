@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <title>Ink of My Own Story</title>
+
+    <style>
+      .intro-anim {
+        animation: fadeIn 0.5s ease 0.1s both;
+      }
+
+      .biography-title {
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 23%;
+        margin-bottom: 25%;
+
+        & h1 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        & p {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          margin-top: 1rem;
+        }
+      }
+
+      .biography-content .biography-hero {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: stretch;
+        text-align: justify;
+        padding-top: 3rem;
+      }
+
+      .biography-content .biography-hero .image-section {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        color: var(--accent-color);
+      }
+
+      .biography-content .biography-hero .image-section img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .biography-content .biography-hero .text-section {
+        position: relative;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      .biography-content .biography-hero .text-section h3 {
+        position: static;
+        text-align: left;
+        display: block;
+        font-size: 2.2rem;
+        letter-spacing: 0.04em;
+        white-space: normal;
+        margin: 0.5rem 0;
+      }
+
+      .biography-content .biography-hero .text-section p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .biography-content .biography-hero sup {
+        color: var(--accent-color);
+      }
+
+      .biography-content .biography-hero-r {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .biography-content .biography-hero-r .image-section {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .biography-content .biography-hero-r .text-section {
+        width: 100%;
+      }
+
+      @media (min-width: 1200px) {
+        .biography-content .biography-hero {
+          flex-direction: row;
+          max-width: 1280px;
+        }
+
+        .biography-content .biography-hero-r {
+          flex-direction: row-reverse;
+        }
+        .biography-content .biography-hero .image-section {
+          width: 46%;
+          margin-right: 1rem;
+        }
+        .biography-content .biography-hero .text-section {
+          width: 54%;
+        }
+        .biography-content .biography-hero .text-section h3 {
+          position: absolute;
+          right: 0;
+          text-align: right;
+          display: block;
+          font-size: 5rem;
+          white-space: nowrap;
+        }
+        .biography-content .biography-hero .text-section p {
+          font-size: 1.125rem;
+          line-height: 1.6rem;
+          &.first-paragraph {
+            margin-top: 8rem;
+          }
+        }
+        .biography-content .biography-hero .image-section img {
+          height: auto;
+          min-height: 280px;
+        }
+        .biography-content .biography-hero-r .image-section {
+          width: 46%;
+          margin-left: 1rem;
+          margin-right: 0;
+        }
+        .biography-content .biography-hero-r .text-section {
+          width: 54%;
+        }
+        .biography-content .biography-hero-r .text-section h3 {
+          position: absolute;
+          left: 0;
+          text-align: left;
+          display: block;
+          font-size: 5rem;
+          white-space: nowrap;
+        }
+      }
+
+      /* Desktop / large screens */
+      @media (min-width: 1600px) {
+        .biography-content .biography-hero .text-section h3 {
+          font-size: 7rem;
+        }
+        .biography-content .biography-hero .text-section p {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+
+          &.first-paragraph {
+            margin-top: 10rem;
+          }
+        }
+      }
+
+      /* Back to top button */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 1rem;
+        bottom: 1.25rem;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color, #333);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50%;
+        z-index: 9999;
+        font-size: 1.1rem;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-2px);
+        background-color: var(--accent-color-200);
+        transition: transform 150ms ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="topbar-header-contents" id="topbar">
+        <span class="topbar-logo">
+          <a href="../index.html"> JGNV </a>
+        </span>
+        <span class="topbar-webname"> Biography </span>
+        <nav style="margin-left: auto">
+          <a href="../index.html" class="article-link">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <a href="#topbar" class="back-to-top" aria-label="Back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        style="width: 24px; height: 24px;"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </a>
+
+    <div>
+      <main class="biography-content">
+        <section class="biography-title">
+          <h1 style="animation: fadeIn 0.5s">
+            Ink of My Own Story
+          </h1>
+          <p class="intro-anim">
+            A journey through my <mark>childhood</mark>, <mark>teenage</mark>,
+            and <mark>college</mark> years, exploring how my passion for
+            creativity and technology shaped my life.
+          </p>
+        </section>
+        <section>
+          <!-- Hero -->
+          <article class="biography-hero">
+            <section class="image-section">
+              <!-- No image yet. div in place of img -->
+              <img
+                src="../assets/biography-childhood.png"
+                alt="Childhood Image"
+              />
+            </section>
+            <section class="text-section">
+              <h3>Childhood Years</h3>
+              <p class="first-paragraph">
+                My journey growing up began with an interest for drawing.<sup
+                  >1</sup
+                >
+                I was drawing using those ballpens my father uses in his
+                job.<sup>2</sup> As soon as they noticed this, crayons and
+                pencils were in my hand in the following moment.<sup>3</sup>
+                Each day, pencils and crayons were my toys which unlocked
+                stories in my imagination.<sup>4</sup> Before I could learn to
+                read and count, boats in the sky, cars in the mountains, upside
+                down waterfalls, and weirdly shaped landscapes were my
+                language.<sup>5</sup> Due to this, I was never the loud or
+                outgoing child in my class.<sup>6</sup> I preferred to stay in
+                corners quietly shaping my next universe without
+                distractions.<sup>7</sup>
+              </p>
+              <p>
+                Before you say I am a loner, I have friends along with me.<sup
+                  >8</sup
+                >
+                I still remember the day where I saw that the classroom wall
+                lacked something to which I drew and got scolded.<sup>9</sup> It
+                was one of the moments I realized how much I wanted to
+                create.<sup>10</sup> Around that time I started wearing glasses
+                and made the world look sharper and more detailed than ever.<sup
+                  >11</sup
+                >
+                Even those little things; the texture of a tree bark, the way
+                shadows are formed, the waves of the waters, or the grass leaves
+                of the plains, made my drawing a bit more detailed.<sup>12</sup>
+                Every new ideas and observations were on my paper the next
+                second.<sup>13</sup> Over time, I realized that for me, art was
+                never just a hobby of some sorts, but also a way to communicate
+                my ideas, my imagination, feelings if I had one, and
+                thoughts.<sup>14</sup> My sketches became more detailed and more
+                colorful the way how I saw my world.<sup>15</sup> These early
+                experiences gave me confidence in my creative skills and help me
+                understand who I was and what I loved to do.<sup>16</sup> Even
+                as a child, drawing and painting is where I felt the connection
+                to.<sup>17</sup> This connection guided my path throughout my
+                childhood, at present, and towards the future.<sup>18</sup> From
+                those crayons and pencils which I first held, and the ballpen
+                that led me to development, my passion for creating shaped my
+                childhood as a whole.<sup>19</sup> It became a part of who I
+                am.<sup>20</sup>
+              </p>
+            </section>
+          </article>
+
+          <article class="biography-hero biography-hero-r">
+            <section class="image-section">
+              <!-- No image yet. div in place of img -->
+              <img
+                src="../assets/biography-teenage.png"
+                alt="Teenage Image"
+                style="object-position: 50% 30%"
+              />
+            </section>
+            <section class="text-section">
+              <h3>Teenage Years</h3>
+              <p class="first-paragraph">
+                My teenage years were a time of growth and change in my
+                life.<sup>1</sup> I became close to a small group of friends who
+                are also artistic and enjoyed drawing as much as I did.<sup
+                  >2</sup
+                >
+                We shared sketches and stories during breaks, filled up
+                sketchbooks, modeled clays, painted canvases, and drew on
+                whiteboards.<sup>3</sup> Although these friendships helped my
+                creativity grow, these things distracted me from my
+                schoolwork.<sup>4</sup> Time after time, teachers reminded me to
+                focus on my studies, but my attention always goes back to my
+                drawings.<sup>5</sup> Over time, our group of artist friends
+                split up due to reasons, but my passion grew stronger than
+                ever.<sup>6</sup> Even quarantine did not stop me from
+                communicating with my friends.<sup>7</sup> Discovering video
+                games became an important turning point for me, not because of
+                addiction, but because on how artwork could come to life through
+                those movement and interactions.<sup>8</sup> I became curious on
+                how these digital worlds were made and how those artistic
+                visuals change.<sup>9</sup> It lead me to programming which felt
+                like discovering a new tool like those pencil and crayons during
+                my first journey.<sup>10</sup>
+              </p>
+              <p>
+                With programming, I could take ideas that had stayed in papers
+                and bring them to life on screen.<sup>11</sup> I spent countless
+                hours trying to figure out how things work, fixing mistakes, and
+                eventually completing a game, although unrefined and cluttered,
+                but it is a game which I am very proud of.<sup>12</sup> Even
+                though I am still struggling in some of my classes during that
+                time, I found my self in pleasure in combining creativity and
+                problem solving.<sup>13</sup> Technology and storytelling became
+                my passion with each stronger than the other.<sup>14</sup> I see
+                visions of the future where I can make my own interactive
+                worlds, share stories beyond just the paper.<sup>15</sup> My
+                years during high school taught me the importance of patience
+                and perseverance as learning new skills was never easy.<sup
+                  >16</sup
+                >
+                There were times where I found myself stuck in a problem and
+                thought that was it, but learned to grow and overcome these
+                struggles.<sup>17</sup> There was no AI to talk to so most of
+                the time, forums after forums, documentation after
+                documentation, or tutorials after tutorials, each leading me to
+                find the answer to my problems.<sup>18</sup> Creativity became a
+                part of my identity, one that I am willing to nurture and
+                protect.<sup>19</sup> Each line in a sketch, each variable in a
+                code, and each idea in my imagination contributed to the
+                direction I would eventually take in life.<sup>20</sup>
+              </p>
+            </section>
+          </article>
+
+          <article class="biography-hero">
+            <section class="image-section">
+              <!-- No image yet. div in place of img -->
+              <img src="../assets/biography-college.png" alt="College Image" />
+            </section>
+            <section class="text-section">
+              <h3>College Years</h3>
+              <p class="first-paragraph">
+                My college experience was unlike what I expected.<sup>1</sup>
+                Unlike other colleagues who lived their lives in this country,
+                for me it was a rollercoaster ride of an experience.<sup>2</sup>
+                Adjusting took me longer than I expected, well not because of
+                the language, but because on how lively the streets are, the
+                darker side of humanity, and how the people live their life in
+                this country.<sup>3</sup> These experiences halted my creativity
+                as survival was the first and foremost importance at the
+                moment.<sup>4</sup> As I adjust to the new environment and my
+                classes, my passion for drawing and technology goes back to me
+                and I started creating more and more games side by side to my
+                classes.<sup>5</sup> College gave me the chance to learn more
+                about digital technologies, software development, new languages,
+                and visual arts in a supportive environment.<sup>6</sup>
+                Throughout my classes, group projects helped me learn how to
+                collaborate with others and appreciate more ideas.<sup>7</sup>
+                Although the group of friends I have right now are not the
+                artistic side, they are now a group of friends that are on the
+                technology side of things.<sup>8</sup> I learned to appreciate
+                this new form of collaboration as much as the quiet artistic
+                moments of my past.<sup>9</sup> Long nights spent debugging
+                code, designing assets, reminded me that creativity can be many
+                forms.<sup>10</sup> Joining organizations to pursue my path as a
+                programmer with creativity, challenging myself to competitions,
+                learning to grow between techstacks are where I am right
+                now.<sup>11</sup>
+              </p>
+              <p>
+                In the past where competitions among artists is where thrived,
+                competitions in technologies are where I pursue with the same
+                determination.<sup>12</sup> Each new project strengthens my
+                problem-solving skills and expands ways I could’ve never have
+                imagined.<sup>13</sup> College has shown me that creativity is
+                best combined with technology.<sup>14</sup> I have learned to be
+                more resilient and patient along with the virtue of effort in
+                the face of challenges.<sup>15</sup> My experiences here have
+                taught me that growth happens outside comfort zones.<sup
+                  >16</sup
+                >
+                By balancing academics, personal projects, and collaborative
+                work, I feel that I am going to a path towards becoming a better
+                and more artistic future of myself.<sup>17</sup> I am beginning
+                to understand how to turn my ideas into results that others can
+                also experience.<sup>18</sup> Every success and failures teaches
+                me new things like discipline, creativity, and adaptability.<sup
+                  >19</sup
+                >
+                With each projects and each breakthrough, I feel motivated to
+                continue pushing the boundaries of what I can create and
+                accomplish both art and technology.<sup>20</sup>
+              </p>
+            </section>
+          </article>
+        </section>
+        <!-- 
+        <article id="childhood">
+          <picture>
+            <img src="./assets/personal-blog-story-img.jpg" alt="Childhood" />
+          </picture>
+          <h3>Childhood Years</h3>
+          <p>
+            My journey growing up began with an interest for drawing.<sup
+              >1</sup
+            >
+            I was drawing using those ballpens my father uses in his job.<sup
+              >2</sup
+            >
+            As soon as they noticed this, crayons and pencils were in my hand in
+            the following moment.<sup>3</sup> Each day, pencils and crayons were
+            my toys which unlocked stories in my imagination.<sup>4</sup> Before
+            I could learn to read and count, boats in the sky, cars in the
+            mountains, upside down waterfalls, and weirdly shaped landscapes
+            were my language.<sup>5</sup> Due to this, I was never the loud or
+            outgoing child in my class.<sup>6</sup> I preferred to stay in
+            corners quietly shaping my next universe without distractions.<sup
+              >7</sup
+            >
+            Before you say I am a loner, I have friends along with me.<sup
+              >8</sup
+            >
+            I still remember the day where I saw that the classroom wall lacked
+            something to which I drew and got scolded.<sup>9</sup> It was one of
+            the moments I realized how much I wanted to create.<sup>10</sup>
+            Around that time I started wearing glasses and made the world look
+            sharper and more detailed than ever.<sup>11</sup> Even those little
+            things; the texture of a tree bark, the way shadows are formed, the
+            waves of the waters, or the grass leaves of the plains, made my
+            drawing a bit more detailed.<sup>12</sup> Every new ideas and
+            observations were on my paper the next second.<sup>13</sup> Over
+            time, I realized that for me, art was never just a hobby of some
+            sorts, but also a way to communicate my ideas, my imagination,
+            feelings if I had one, and thoughts.<sup>14</sup> My sketches became
+            more detailed and more colorful the way how I saw my world.<sup
+              >15</sup
+            >
+            These early experiences gave me confidence in my creative skills and
+            help me understand who I was and what I loved to do.<sup>16</sup>
+            Even as a child, drawing and painting is where I felt the connection
+            to.<sup>17</sup> This connection guided my path throughout my
+            childhood, at present, and towards the future.<sup>18</sup> From
+            those crayons and pencils which I first held, and the ballpen that
+            led me to development, my passion for creating shaped my childhood
+            as a whole.<sup>19</sup> It became a part of who I am.<sup>20</sup>
+          </p>
+        </article>
+
+        <article id="teenage">
+          <h3>Teenage Years</h3>
+          <p>
+            My teenage years were a time of growth and change in my life.<sup
+              >1</sup
+            >
+            I became close to a small group of friends who are also artistic and
+            enjoyed drawing as much as I did.<sup>2</sup> We shared sketches and
+            stories during breaks, filled up sketchbooks, modeled clays, painted
+            canvases, and drew on whiteboards.<sup>3</sup> Although these
+            friendships helped my creativity grow, these things distracted me
+            from my schoolwork.<sup>4</sup> Time after time, teachers reminded
+            me to focus on my studies, but my attention always goes back to my
+            drawings.<sup>5</sup> Over time, our group of artist friends split
+            up due to reasons, but my passion grew stronger than ever.<sup
+              >6</sup
+            >
+            Even quarantine did not stop me from communicating with my
+            friends.<sup>7</sup> Discovering video games became an important
+            turning point for me, not because of addiction, but because on how
+            artwork could come to life through those movement and
+            interactions.<sup>8</sup> I became curious on how these digital
+            worlds were made and how those artistic visuals change.<sup>9</sup>
+            It lead me to programming which felt like discovering a new tool
+            like those pencil and crayons during my first journey.<sup>10</sup>
+            With programming, I could take ideas that had stayed in papers and
+            bring them to life on screen.<sup>11</sup> I spent countless hours
+            trying to figure out how things work, fixing mistakes, and
+            eventually completing a game, although unrefined and cluttered, but
+            it is a game which I am very proud of.<sup>12</sup> Even though I am
+            still struggling in some of my classes during that time, I found my
+            self in pleasure in combining creativity and problem solving.<sup
+              >13</sup
+            >
+            Technology and storytelling became my passion with each stronger
+            than the other.<sup>14</sup> I see visions of the future where I can
+            make my own interactive worlds, share stories beyond just the
+            paper.<sup>15</sup> My years during high school taught me the
+            importance of patience and perseverance as learning new skills was
+            never easy.<sup>16</sup> There were times where I found myself stuck
+            in a problem and thought that was it, but learned to grow and
+            overcome these struggles.<sup>17</sup> There was no AI to talk to so
+            most of the time, forums after forums, documentation after
+            documentation, or tutorials after tutorials, each leading me to find
+            the answer to my problems.<sup>18</sup> Creativity became a part of
+            my identity, one that I am willing to nurture and protect.<sup
+              >19</sup
+            >
+            Each line in a sketch, each variable in a code, and each idea in my
+            imagination contributed to the direction I would eventually take in
+            life.<sup>20</sup>
+          </p>
+        </article>
+
+        <article id="college">
+          <h3>College Years</h3>
+          <p>
+            My college experience was unlike what I expected.<sup>1</sup> Unlike
+            other colleagues who lived their lives in this country, for me it
+            was a rollercoaster ride of an experience.<sup>2</sup> Adjusting
+            took me longer than I expected, well not because of the language,
+            but because on how lively the streets are, the darker side of
+            humanity, and how the people live their life in this country.<sup
+              >3</sup
+            >
+            These experiences halted my creativity as survival was the first and
+            foremost importance at the moment.<sup>4</sup> As I adjust to the
+            new environment and my classes, my passion for drawing and
+            technology goes back to me and I started creating more and more
+            games side by side to my classes.<sup>5</sup> College gave me the
+            chance to learn more about digital technologies, software
+            development, new languages, and visual arts in a supportive
+            environment.<sup>6</sup> Throughout my classes, group projects
+            helped me learn how to collaborate with others and appreciate more
+            ideas.<sup>7</sup> Although the group of friends I have right now
+            are not the artistic side, they are now a group of friends that are
+            on the technology side of things.<sup>8</sup> I learned to
+            appreciate this new form of collaboration as much as the quiet
+            artistic moments of my past.<sup>9</sup> Long nights spent debugging
+            code, designing assets, reminded me that creativity can be many
+            forms.<sup>10</sup> Joining organizations to pursue my path as a
+            programmer with creativity, challenging myself to competitions,
+            learning to grow between techstacks are where I am right now.<sup
+              >11</sup
+            >
+            In the past where competitions among artists is where thrived,
+            competitions in technologies are where I pursue with the same
+            determination.<sup>12</sup> Each new project strengthens my
+            problem-solving skills and expands ways I could’ve never have
+            imagined.<sup>13</sup> College has shown me that creativity is best
+            combined with technology.<sup>14</sup> I have learned to be more
+            resilient and patient along with the virtue of effort in the face of
+            challenges.<sup>15</sup> My experiences here have taught me that
+            growth happens outside comfort zones.<sup>16</sup> By balancing
+            academics, personal projects, and collaborative work, I feel that I
+            am going to a path towards becoming a better and more artistic
+            future of myself.<sup>17</sup> I am beginning to understand how to
+            turn my ideas into results that others can also experience.<sup
+              >18</sup
+            >
+            Every success and failures teaches me new things like discipline,
+            creativity, and adaptability.<sup>19</sup> With each projects and
+            each breakthrough, I feel motivated to continue pushing the
+            boundaries of what I can create and accomplish both art and
+            technology.<sup>20</sup>
+          </p>
+        </article> -->
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy; 2025 By me of course <em>Valencerina</em>. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
