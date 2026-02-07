@@ -241,6 +241,27 @@
           background-color: var(--text-dark);
         }
       }
+
+      .page-navigation {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1em;
+        position: sticky;
+        & nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 2em;
+          background-color: var(--base-color-200);
+          padding: 0.5em 0;
+        }
+        & a {
+          color: var(--text-dark);
+          text-decoration: none;
+          text-align: center;
+          padding: 0.5em 1em;
+        }
+      }
     </style>
   </head>
 
@@ -275,9 +296,17 @@
       </svg>
     </a>
 
+    <div class="page-navigation">
+      <nav>
+        <a href="#childhood">Childhood</a>
+        <a href="#teenage">Teenage</a>
+        <a href="#college">College</a>
+      </nav>
+    </div>
+
     <div>
       <main class="biography-content" style="margin-bottom: 5rem">
-        <section class="biography-title" style="position:relative;">
+        <section class="biography-title" style="position: relative">
           <h1 style="animation: fadeIn 0.5s">Ink of My Own Story</h1>
           <p class="intro-anim">
             A journey through my <mark>childhood</mark>, <mark>teenage</mark>,
@@ -294,9 +323,8 @@
         </div>
         <section>
           <!-- Hero -->
-          <article class="biography-hero">
+          <article class="biography-hero" id="childhood">
             <section class="image-section">
-              <!-- No image yet. div in place of img -->
               <img
                 src="../assets/biography-childhood.png"
                 alt="Childhood Image"
@@ -354,7 +382,7 @@
             </section>
           </article>
 
-          <article class="biography-hero biography-hero-r">
+          <article class="biography-hero biography-hero-r" id="teenage">
             <section class="image-section">
               <!-- No image yet. div in place of img -->
               <img
@@ -420,9 +448,8 @@
             </section>
           </article>
 
-          <article class="biography-hero">
+          <article class="biography-hero" id="college">
             <section class="image-section">
-              <!-- No image yet. div in place of img -->
               <img
                 src="../assets/biography-college.png"
                 alt="College Image"
