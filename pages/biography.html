@@ -245,22 +245,49 @@
       .page-navigation {
         width: 100%;
         height: fit-content;
-        margin-top: 1em;
         position: sticky;
+        top: 0;
+        z-index: 1000;
         & nav {
           display: flex;
           flex-direction: row;
           justify-content: center;
           gap: 2em;
-          background-color: var(--base-color-200);
-          padding: 0.5em 0;
+          background: linear-gradient(to right, transparent, var(--base-color-200), transparent);
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
         }
-        & a {
-          color: var(--text-dark);
-          text-decoration: none;
+        & div {
           text-align: center;
-          padding: 0.5em 1em;
+          padding: 1em 1em;
         }
+      }
+
+      /* highlight underline behavior: expand when the link is hovered */
+      .page-navigation nav div {
+        position: relative;
+      }
+      .page-navigation nav div .highlight {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: var(--accent-color);
+        transition: all 180ms ease;
+      }
+      .page-navigation nav div a {
+        color: var(--text-dark);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--accent-color);
+          transition: all 180ms ease;
+        }
+      }
+      .page-navigation nav div a:hover + .highlight {
+        width: 100%;
+        left: 0;
       }
     </style>
   </head>
@@ -298,9 +325,18 @@
 
     <div class="page-navigation">
       <nav>
-        <a href="#childhood">Childhood</a>
-        <a href="#teenage">Teenage</a>
-        <a href="#college">College</a>
+        <div>
+          <a href="#childhood">Childhood</a>
+          <span class="highlight"></span>
+        </div>
+        <div>
+          <a href="#teenage">Teenage</a>
+          <span class="highlight"></span>
+        </div>
+        <div>
+          <a href="#college">College</a>
+          <span class="highlight"></span>
+        </div>
       </nav>
     </div>
 
