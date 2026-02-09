@@ -1,14 +1,165 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-  </head>
-  <body>
-    <nav style="display: flex; flex-direction: column; gap: 1em; font-size: 1.2em; padding: 2em;">
-      <a href="./pages/biography.html">Biography</a>
-      <a href="./pages/blogs.html">Blogs</a>
-    </nav>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" />
+  <title>Home</title>
+
+  <style>
+    header {
+      background-color: var(--transparent);
+      position: absolute;
+      width: 1280px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .hero-intro {
+      background-color: var(--primary-color-100);
+      padding: 2em;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      padding-top: 5em;
+      color: var(--text-light);
+    }
+
+    .hero-contents {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+      width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 1em;
+    }
+
+    .hero-intro::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/home-tile.png');
+      background-repeat: repeat;
+      background-position: center;
+      mix-blend-mode: screen;
+      opacity: 0.5;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-contents>* {
+      height: 100%;
+      width: 50%;
+    }
+
+    .hero-title {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+    }
+
+    .about-me-button {
+      background-color: aqua;
+      width: 9rem;
+      overflow: hidden;
+      gap: 1rem;
+      flex-direction: column;
+      display: flex;
+      height: 1.5em;
+      padding: 0.4em;
+      position: relative;
+
+      & span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit;
+        font-weight: bold;
+      }
+
+      &:hover {
+        padding-top: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topbar-header-contents">
+      <span class="topbar-logo">
+        <a href="./index.html"> JGNV </a>
+      </span>
+      <span class="topbar-webname"> Blog Articles </span>
+      <nav style="margin-left: auto">
+        <a href="./index.html" class="article-link">Home</a>
+        <a href="./pages/blogs.html" class="article-link">Blogs</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero-intro">
+    <div class="hero-contents">
+      <div class="hero-title">
+        <span
+          style="font-size: 3rem; line-height: 0; margin-top: 50%; font-weight: light; color: var(--accent-color-100)">
+          Know
+        </span>
+        <span style="font-size: 10rem; font-weight: bolder; line-height: 1.2;">
+          John<span style="font-size: 3rem;">.GNV</span>
+        </span>
+        <div style="display: flex; flex-direction: row; align-items: center; width: 100%; gap: 1em;">
+          <div style="width: 100%; height: 2px; background-color: var(--text-light);"></div>
+          <span style="font-size: 2rem; white-space: nowrap; margin-right: 1em;">Aspiring Soft dev</span>
+        </div>
+        <div style="font-size: 1.5rem;">
+          <span>
+            Me?
+          </span>
+          <div class="about-me-button">
+            <span>
+              About Me
+            </span>
+            <span>
+              About Me
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero-picture" style="background-color: aqua;">
+
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+
+  </div>
+
+
+
+  <nav style="display: flex; flex-direction: column; gap: 1em; font-size: 1.2em; padding: 2em;">
+    <a href="./pages/biography.html">Biography</a>
+    <a href="./pages/blogs.html">Blogs</a>
+  </nav>
+</body>
+
 </html>
