@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
     <title>Post-Overseas: Discovering the Philippines as a Filipino</title>
     <style>
@@ -49,7 +52,7 @@
       }
 
       .blog-img-frame {
-        background-color: var(--secondary-color-100);
+        background-color: var(--base-color-300);
         padding: 1em;
         border-radius: 15px;
 
@@ -91,10 +94,10 @@
       }
 
       .body q {
-        font-style: italic;
+        background-color: var(--accent-color-transparent);
         text-decoration-line: underline;
-        text-decoration-color: var(--secondary-color);
-        text-decoration-thickness: 0.3em;
+        text-decoration-color: var(--accent-color);
+        text-decoration-thickness: 0.1em;
         text-underline-offset: 0.1em;
       }
 
@@ -106,8 +109,6 @@
       }
 
       mark {
-        background-color: var(--no-color);
-        color: var(--text-light-mark);
         font-weight: bold;
       }
 
@@ -121,20 +122,17 @@
 
   <body>
     <header>
-    <div class="topbar-header-contents">
-      <span class="topbar-logo">
-        <a href="./index.html">
-          JGNV
-        </a>
-      </span>
-      <span class="topbar-webname">
-        Blog Articles
-      </span>
-      <nav style="margin-left: auto;">
-        <a href="index.html" class="article-link">Home</a>
-      </nav>
-    </div>
-  </header>
+      <div class="topbar-header-contents">
+        <span class="topbar-logo">
+          <a href="../index.html"> JGNV </a>
+        </span>
+        <span class="topbar-webname"> Blog Articles </span>
+        <nav style="margin-left: auto">
+          <a href="../index.html" class="article-link">Home</a>
+          <a href="blogs.html" class="article-link">Blogs</a>
+        </nav>
+      </div>
+    </header>
     <main>
       <article class="blog-post">
         <!-- Heading -->
@@ -168,7 +166,7 @@
             <span>5 min read</span>
           </div>
           <picture class="blog-img">
-            <img src="./assets/personal-blog-story-img.jpg" alt="Philippines" />
+            <img src="../assets/personal-blog-story-img.jpg" alt="Philippines" />
           </picture>
         </section>
 
