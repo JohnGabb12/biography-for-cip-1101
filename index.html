@@ -14,6 +14,14 @@
     <title>Home</title>
 
     <style>
+      .intro-anim {
+        animation: fadeIn 0.5s ease 0.1s both;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       header {
         background-color: var(--transparent);
         position: absolute;
@@ -752,7 +760,7 @@
       }
 
       .contact-hero {
-        background-color: var(--primary-color-200);
+        background: url("./assets/home-tile.png") repeat center;
         padding-top: 10em;
         width: 100%;
         color: var(--text-light);
@@ -867,6 +875,12 @@
           <a href="./index.html">JGNV</a>
         </span>
         <span class="topbar-webname"> </span>
+        <nav class="topbar-nav">
+          <a href="#experience" class="article-link">Experiences</a>
+          <a href="#blog" class="article-link">Latest Blogs</a>
+          <a href="#techstack" class="article-link">Techstacks</a>
+          <a href="#contact" class="article-link">Contact</a>
+        </nav>
         <nav class="topbar-nav">
           <a href="./index.html" class="article-link">Home</a>
           <a href="./pages/blogs.html" class="article-link">Blogs</a>
