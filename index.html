@@ -673,7 +673,10 @@
           position: relative;
           overflow: visible;
           cursor: default;
-          transition: transform 0.18s ease, box-shadow 0.18s ease, border 0.18s ease;
+          transition:
+            transform 0.18s ease,
+            box-shadow 0.18s ease,
+            border 0.18s ease;
           font-size: 0.9rem;
           padding: 1rem 1.5rem;
           border: 2px solid transparent;
@@ -703,7 +706,10 @@
         & .techstack-hero-items .tech-item:hover {
           transform: scale(1.1);
           box-shadow: 0 0 30px rgba(255, 165, 225, 0.12);
-          transition: transform 0.18s ease, box-shadow 0.18s ease, border 0.18s ease;
+          transition:
+            transform 0.18s ease,
+            box-shadow 0.18s ease,
+            border 0.18s ease;
           border: 2px solid var(--accent-color);
         }
       }
@@ -852,7 +858,7 @@
 
       .interest-hero {
         width: 100%;
-        
+
         & .interest-hero-contents {
           max-width: 1280px;
           margin-left: auto;
@@ -952,11 +958,13 @@
           </div>
         </div>
         <div class="hero-picture">
-          <img
-            src="assets/home-me.png"
-            alt="Profile Picture"
-            class="hero-image"
-          />
+          <a href="./assets/home-me.png" target="images" title="Me">
+            <img
+              src="assets/home-me.png"
+              alt="Profile Picture"
+              class="hero-image"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -1161,66 +1169,189 @@
 
         <div class="techstack-hero-subtitle">Languages</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Python" aria-label="Python"><span class="tech-initials">Py</span><span class="tech-name">Python</span></span>
-          <span class="tech-item" data-name="Java" aria-label="Java"><span class="tech-initials">Ja</span><span class="tech-name">Java</span></span>
-          <span class="tech-item" data-name="JavaScript" aria-label="JavaScript"><span class="tech-initials">JS</span><span class="tech-name">JavaScript</span></span>
-          <span class="tech-item" data-name="TypeScript" aria-label="TypeScript"><span class="tech-initials">TS</span><span class="tech-name">TypeScript</span></span>
-          <span class="tech-item" data-name="C++" aria-label="C++"><span class="tech-initials">C++</span><span class="tech-name">C++</span></span>
-          <span class="tech-item" data-name="HTML" aria-label="HTML"><span class="tech-initials">HTML</span><span class="tech-name">HTML</span></span>
-          <span class="tech-item" data-name="CSS3" aria-label="CSS"><span class="tech-initials">CSS</span><span class="tech-name">CSS</span></span>
-          <span class="tech-item" data-name="SQL" aria-label="SQL"><span class="tech-initials">SQL</span><span class="tech-name">SQL</span></span>
-          <span class="tech-item" data-name="PHP" aria-label="PHP"><span class="tech-initials">PHP</span><span class="tech-name">PHP</span></span>
-          <span class="tech-item" data-name="GO" aria-label="GO"><span class="tech-initials">Go</span><span class="tech-name">GO</span></span>
-          <span class="tech-item" data-name="C#" aria-label="C#"><span class="tech-initials">C#</span><span class="tech-name">C#</span></span>
+          <span class="tech-item" data-name="Python" aria-label="Python"
+            ><span class="tech-initials">Py</span
+            ><span class="tech-name">Python</span></span
+          >
+          <span class="tech-item" data-name="Java" aria-label="Java"
+            ><span class="tech-initials">Ja</span
+            ><span class="tech-name">Java</span></span
+          >
+          <span class="tech-item" data-name="JavaScript" aria-label="JavaScript"
+            ><span class="tech-initials">JS</span
+            ><span class="tech-name">JavaScript</span></span
+          >
+          <span class="tech-item" data-name="TypeScript" aria-label="TypeScript"
+            ><span class="tech-initials">TS</span
+            ><span class="tech-name">TypeScript</span></span
+          >
+          <span class="tech-item" data-name="C++" aria-label="C++"
+            ><span class="tech-initials">C++</span
+            ><span class="tech-name">C++</span></span
+          >
+          <span class="tech-item" data-name="HTML" aria-label="HTML"
+            ><span class="tech-initials">HTML</span
+            ><span class="tech-name">HTML</span></span
+          >
+          <span class="tech-item" data-name="CSS3" aria-label="CSS"
+            ><span class="tech-initials">CSS</span
+            ><span class="tech-name">CSS</span></span
+          >
+          <span class="tech-item" data-name="SQL" aria-label="SQL"
+            ><span class="tech-initials">SQL</span
+            ><span class="tech-name">SQL</span></span
+          >
+          <span class="tech-item" data-name="PHP" aria-label="PHP"
+            ><span class="tech-initials">PHP</span
+            ><span class="tech-name">PHP</span></span
+          >
+          <span class="tech-item" data-name="GO" aria-label="GO"
+            ><span class="tech-initials">Go</span
+            ><span class="tech-name">GO</span></span
+          >
+          <span class="tech-item" data-name="C#" aria-label="C#"
+            ><span class="tech-initials">C#</span
+            ><span class="tech-name">C#</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Frontend & UI</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="HTML5" aria-label="HTML5"><span class="tech-initials">HTML</span><span class="tech-name">HTML5</span></span>
-          <span class="tech-item" data-name="CSS3" aria-label="CSS3"><span class="tech-initials">CSS3</span><span class="tech-name">CSS3</span></span>
-          <span class="tech-item" data-name="React" aria-label="React"><span class="tech-initials">Re</span><span class="tech-name">React</span></span>
-          <span class="tech-item" data-name="Nextjs" aria-label="Nextjs"><span class="tech-initials">Nx</span><span class="tech-name">Nextjs</span></span>
-          <span class="tech-item" data-name="Tailwindcss" aria-label="Tailwindcss"><span class="tech-initials">Tw</span><span class="tech-name">Tailwindcss</span></span>
-          <span class="tech-item" data-name="Vite" aria-label="Vite"><span class="tech-initials">V</span><span class="tech-name">Vite</span></span>
-          <span class="tech-item" data-name="Electron.js" aria-label="Electron.js"><span class="tech-initials">El</span><span class="tech-name">Electron.js</span></span>
+          <span class="tech-item" data-name="HTML5" aria-label="HTML5"
+            ><span class="tech-initials">HTML</span
+            ><span class="tech-name">HTML5</span></span
+          >
+          <span class="tech-item" data-name="CSS3" aria-label="CSS3"
+            ><span class="tech-initials">CSS3</span
+            ><span class="tech-name">CSS3</span></span
+          >
+          <span class="tech-item" data-name="React" aria-label="React"
+            ><span class="tech-initials">Re</span
+            ><span class="tech-name">React</span></span
+          >
+          <span class="tech-item" data-name="Nextjs" aria-label="Nextjs"
+            ><span class="tech-initials">Nx</span
+            ><span class="tech-name">Nextjs</span></span
+          >
+          <span
+            class="tech-item"
+            data-name="Tailwindcss"
+            aria-label="Tailwindcss"
+            ><span class="tech-initials">Tw</span
+            ><span class="tech-name">Tailwindcss</span></span
+          >
+          <span class="tech-item" data-name="Vite" aria-label="Vite"
+            ><span class="tech-initials">V</span
+            ><span class="tech-name">Vite</span></span
+          >
+          <span
+            class="tech-item"
+            data-name="Electron.js"
+            aria-label="Electron.js"
+            ><span class="tech-initials">El</span
+            ><span class="tech-name">Electron.js</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Backend & Runtime</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Node.js" aria-label="Node.js"><span class="tech-initials">Nd</span><span class="tech-name">Node.js</span></span>
-          <span class="tech-item" data-name="Express.js" aria-label="Express.js"><span class="tech-initials">Ex</span><span class="tech-name">Express.js</span></span>
-          <span class="tech-item" data-name="Laravel" aria-label="Laravel"><span class="tech-initials">Lv</span><span class="tech-name">Laravel</span></span>
+          <span class="tech-item" data-name="Node.js" aria-label="Node.js"
+            ><span class="tech-initials">Nd</span
+            ><span class="tech-name">Node.js</span></span
+          >
+          <span class="tech-item" data-name="Express.js" aria-label="Express.js"
+            ><span class="tech-initials">Ex</span
+            ><span class="tech-name">Express.js</span></span
+          >
+          <span class="tech-item" data-name="Laravel" aria-label="Laravel"
+            ><span class="tech-initials">Lv</span
+            ><span class="tech-name">Laravel</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Databases & Data</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Postgres" aria-label="Postgres"><span class="tech-initials">PG</span><span class="tech-name">Postgres</span></span>
-          <span class="tech-item" data-name="SQLite" aria-label="SQLite"><span class="tech-initials">SQ</span><span class="tech-name">SQLite</span></span>
-          <span class="tech-item" data-name="MySQL" aria-label="MySQL"><span class="tech-initials">MY</span><span class="tech-name">MySQL</span></span>
+          <span class="tech-item" data-name="Postgres" aria-label="Postgres"
+            ><span class="tech-initials">PG</span
+            ><span class="tech-name">Postgres</span></span
+          >
+          <span class="tech-item" data-name="SQLite" aria-label="SQLite"
+            ><span class="tech-initials">SQ</span
+            ><span class="tech-name">SQLite</span></span
+          >
+          <span class="tech-item" data-name="MySQL" aria-label="MySQL"
+            ><span class="tech-initials">MY</span
+            ><span class="tech-name">MySQL</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Cloud & DevOps</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Docker" aria-label="Docker"><span class="tech-initials">Dc</span><span class="tech-name">Docker</span></span>
-          <span class="tech-item" data-name="Github Actions" aria-label="Github Actions"><span class="tech-initials">GH</span><span class="tech-name">Github Actions</span></span>
+          <span class="tech-item" data-name="Docker" aria-label="Docker"
+            ><span class="tech-initials">Dc</span
+            ><span class="tech-name">Docker</span></span
+          >
+          <span
+            class="tech-item"
+            data-name="Github Actions"
+            aria-label="Github Actions"
+            ><span class="tech-initials">GH</span
+            ><span class="tech-name">Github Actions</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Design & Creative</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Figma" aria-label="Figma"><span class="tech-initials">Fg</span><span class="tech-name">Figma</span></span>
-          <span class="tech-item" data-name="Adobe Products" aria-label="Adobe Products"><span class="tech-initials">Ad</span><span class="tech-name">Adobe Products</span></span>
-          <span class="tech-item" data-name="Canva" aria-label="Canva"><span class="tech-initials">Ca</span><span class="tech-name">Canva</span></span>
-          <span class="tech-item" data-name="Affinity" aria-label="Affinity"><span class="tech-initials">Af</span><span class="tech-name">Affinity</span></span>
-          <span class="tech-item" data-name="Clip Studio" aria-label="Clip Studio"><span class="tech-initials">CS</span><span class="tech-name">Clip Studio</span></span>
-          <span class="tech-item" data-name="Capcut" aria-label="Capcut"><span class="tech-initials">Cp</span><span class="tech-name">Capcut</span></span>
+          <span class="tech-item" data-name="Figma" aria-label="Figma"
+            ><span class="tech-initials">Fg</span
+            ><span class="tech-name">Figma</span></span
+          >
+          <span
+            class="tech-item"
+            data-name="Adobe Products"
+            aria-label="Adobe Products"
+            ><span class="tech-initials">Ad</span
+            ><span class="tech-name">Adobe Products</span></span
+          >
+          <span class="tech-item" data-name="Canva" aria-label="Canva"
+            ><span class="tech-initials">Ca</span
+            ><span class="tech-name">Canva</span></span
+          >
+          <span class="tech-item" data-name="Affinity" aria-label="Affinity"
+            ><span class="tech-initials">Af</span
+            ><span class="tech-name">Affinity</span></span
+          >
+          <span
+            class="tech-item"
+            data-name="Clip Studio"
+            aria-label="Clip Studio"
+            ><span class="tech-initials">CS</span
+            ><span class="tech-name">Clip Studio</span></span
+          >
+          <span class="tech-item" data-name="Capcut" aria-label="Capcut"
+            ><span class="tech-initials">Cp</span
+            ><span class="tech-name">Capcut</span></span
+          >
         </div>
 
         <div class="techstack-hero-subtitle">Tools & Utilities</div>
         <div class="techstack-hero-items">
-          <span class="tech-item" data-name="Git" aria-label="Git"><span class="tech-initials">Git</span><span class="tech-name">Git</span></span>
-          <span class="tech-item" data-name="Github" aria-label="Github"><span class="tech-initials">GH</span><span class="tech-name">Github</span></span>
-          <span class="tech-item" data-name="JWT" aria-label="JWT"><span class="tech-initials">JWT</span><span class="tech-name">JWT</span></span>
-          <span class="tech-item" data-name="NPM" aria-label="NPM"><span class="tech-initials">NPM</span><span class="tech-name">NPM</span></span>
+          <span class="tech-item" data-name="Git" aria-label="Git"
+            ><span class="tech-initials">Git</span
+            ><span class="tech-name">Git</span></span
+          >
+          <span class="tech-item" data-name="Github" aria-label="Github"
+            ><span class="tech-initials">GH</span
+            ><span class="tech-name">Github</span></span
+          >
+          <span class="tech-item" data-name="JWT" aria-label="JWT"
+            ><span class="tech-initials">JWT</span
+            ><span class="tech-name">JWT</span></span
+          >
+          <span class="tech-item" data-name="NPM" aria-label="NPM"
+            ><span class="tech-initials">NPM</span
+            ><span class="tech-name">NPM</span></span
+          >
         </div>
       </div>
     </section>
@@ -1235,7 +1366,11 @@
       <div class="blog-hero-contents">
         <h2 class="blog-hero-title">Latest Blogs</h2>
         <section class="blog-hero-cards">
-          <a href="./pages/career-blog-story.html" class="blog-hero-card" title="Click to read more">
+          <a
+            href="./pages/career-blog-story.html"
+            class="blog-hero-card"
+            title="Click to read more"
+          >
             <img
               src="./assets/career-blog-story-img.jpg"
               alt="Career Blog Story"
@@ -1261,7 +1396,11 @@
             </div>
             <span class="read-more-button"> Read More &rarr; </span>
           </a>
-          <a href="./pages/tech-blog-story.html" class="blog-hero-card" title="Click to read more">
+          <a
+            href="./pages/tech-blog-story.html"
+            class="blog-hero-card"
+            title="Click to read more"
+          >
             <div class="blog-hero-card-title">
               The Inevitable Decline of an Unofficial University that Created
               Developers
@@ -1271,7 +1410,11 @@
               <div class="blog-hero-card-date">Tuesday, January 13, 2026</div>
             </div>
           </a>
-          <a href="./pages/personal-blog-story.html" class="blog-hero-card" title="Click to read more">
+          <a
+            href="./pages/personal-blog-story.html"
+            class="blog-hero-card"
+            title="Click to read more"
+          >
             <div class="blog-hero-card-title">
               Post-Overseas: Discovering the Philippines as a Filipino
             </div>
