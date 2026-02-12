@@ -90,6 +90,10 @@ footer {
   color: var(--text-light);
   padding: 10px 20px;
   text-align: center;
+
+  & mark {
+    color: var(--accent-color);
+  }
 }
 
 a.article-link {
@@ -169,7 +173,7 @@ mark {
   margin-left: auto;
   margin-right: auto;
   z-index: 10;
-  
+
   nav {
     display: flex;
     flex-direction: row;
@@ -205,12 +209,32 @@ mark {
       width: 100%;
       height: 2px;
       background-color: var(--accent-color-100);
-
     }
   }
-  
 }
 
+.back-to-top {
+  position: fixed;
+  right: 1em;
+  bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color-100, #333);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1em;
+  z-index: 9999;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-color-200);
+    transition: transform 150ms ease;
+  }
+}
 
 /* Keyframes */
 @keyframes fadeIn {

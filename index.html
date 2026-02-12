@@ -765,6 +765,123 @@
         backdrop-filter: blur(4px);
       }
 
+      .galleria-hero {
+        width: 100%;
+
+        & h2 {
+          font-size: 7rem;
+          font-family: var(--heading-font);
+          font-weight: bold;
+          line-height: 1.3;
+          margin-bottom: 0;
+        }
+
+        & p {
+          font-size: 1.5rem;
+          margin-top: 0.5em;
+          margin-bottom: 2em;
+        }
+
+        & .galleria-hero-contents {
+          max-width: 1280px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 2em;
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 10em;
+          gap: 2em;
+
+          & .galleria-hero-left {
+            margin-top: 10em;
+            padding-top: 10em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            & .galleria-button {
+              width: fit-content;
+              height: 36px;
+              text-decoration: none;
+              color: var(--text-light);
+              display: flex;
+              flex-direction: column;
+              overflow: hidden;
+
+              &:hover div.b {
+                margin-top: -36px;
+                transition: 0.18s all ease;
+              }
+
+              & div.a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                text-wrap: nowrap;
+                transition: 0.18s all ease;
+              }
+
+              & span.aa {
+                background-color: var(--primary-color-100);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 15px;
+                border-radius: 20px;
+                width: fit-content;
+              }
+
+              & div.aa {
+                background-color: var(--primary-color-100);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px;
+                border-radius: 20px;
+                width: fit-content;
+
+                & svg {
+                  width: 20px;
+                  height: 20px;
+                  fill: var(--text-light);
+                }
+              }
+            }
+          }
+
+          & .galleria-hero-right {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            height: 100%;
+            gap: 1em;
+            margin-top: 6em;
+
+            & .galleria-link {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr;
+              gap: 1em;
+
+              & img {
+                width: 20em;
+                height: 20em;
+                object-fit: cover;
+                border-radius: 12px;
+                transition: transform 220ms ease;
+
+                &:hover {
+                  transform: scale(1.05);
+                  transition: transform 220ms ease;
+                }
+              }
+            }
+          }
+        }
+      }
+
       .contact-hero {
         background: url("./assets/home-tile.png") repeat center;
         padding-top: 10em;
@@ -906,8 +1023,9 @@
         <span class="topbar-webname"> </span>
         <nav class="topbar-nav">
           <a href="#experience" class="article-link">Experiences</a>
-          <a href="#blog" class="article-link">Latest Blogs</a>
           <a href="#techstack" class="article-link">Techstacks</a>
+          <a href="#galleria" class="article-link">Galleria</a>
+          <a href="#blog" class="article-link">Latest Blogs</a>
           <a href="#contact" class="article-link">Contact</a>
         </nav>
       </div>
@@ -1361,6 +1479,63 @@
         <h2 class="interest-hero-title">Interests / Skills</h2>
       </div>
     </section> -->
+    <section class="galleria-hero" id="galleria">
+      <div class="galleria-hero-contents">
+        <div class="galleria-hero-right">
+          <a
+            href="./pages/photo-gallery.html"
+            class="galleria-link"
+            title="View Photo Gallery"
+          >
+            <img
+              src="./assets/photo-dump/childhood.jpg"
+              alt="Childhood Photo"
+            />
+            <img src="./assets/photo-dump/travel.jpg" alt="Travel Photo" />
+            <img src="./assets/photo-dump/egypt.jpg" alt="Egypt Photo" />
+            <img src="./assets/photo-dump/paris.jpg" alt="Paris Photo" />
+          </a>
+        </div>
+        <div class="galleria-hero-left">
+          <h2>Galleria</h2>
+          <p>A collection of me and the world around me.</p>
+          <a href="./pages/photo-gallery.html" class="galleria-button">
+            <div class="a b">
+              <span class="aa"> View Photo Gallery </span>
+              <div class="aa">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="a">
+              <div class="aa">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <span class="aa"> View Photo Gallery </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="blog-hero" id="blog">
       <div class="blog-hero-contents">

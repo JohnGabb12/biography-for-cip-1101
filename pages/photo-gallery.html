@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <title>Photo Galleria</title>
+    <style>
+      main {
+        width: 80%;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section {
+        &.filters-section:has(input[type="radio"]#blog:checked)
+          ~ section.gallery-section
+          .self,
+        &.filters-section:has(input[type="radio"]#blog:checked)
+          ~ section.gallery-section
+          .group {
+          width: 0px;
+          margin-bottom: 0px;
+        }
+
+        &.filters-section:has(input[type="radio"]#self:checked)
+          ~ section.gallery-section
+          .blog,
+        &.filters-section:has(input[type="radio"]#self:checked)
+          ~ section.gallery-section
+          .group {
+          width: 0px;
+          margin-bottom: 0px;
+        }
+
+        &.filters-section:has(input[type="radio"]#group:checked)
+          ~ section.gallery-section
+          .blog,
+        &.filters-section:has(input[type="radio"]#group:checked)
+          ~ section.gallery-section
+          .self {
+          width: 0px;
+          margin-bottom: 0px;
+        }
+
+        &.header-section {
+          margin-top: 2em;
+          text-align: center;
+        }
+
+        &.filters-section {
+          font-size: 1.2em;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5em;
+
+          & input[type="radio"] {
+            display: none;
+
+            &:checked + label {
+              background-color: var(--primary-color);
+              color: var(--text-light);
+              transition: 0.18s all ease-in-out;
+            }
+          }
+
+          & label {
+            cursor: pointer;
+            background-color: var(--transparent);
+            color: var(--primary-color);
+            padding: 0.5em 1em;
+            border-radius: 2em;
+            transition: 0.18s all ease-in-out;
+            display: inline-block;
+
+            &:hover {
+              background-color: var(--base-color-200);
+            }
+          }
+        }
+
+        &.gallery-section {
+          min-height: 100vh;
+          padding-bottom: 5em;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto;
+          gap: 1em;
+          margin-top: 2em;
+
+          & div {
+            border-radius: 0.5em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+
+            & .image-cont {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              display: block;
+              border-radius: 15px;
+              background-color: var(--base-color-50);
+              overflow: hidden;
+              max-height: 50em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 1em;
+
+              & img {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                transition: 0.18s all ease-in-out;
+
+                &:hover {
+                  transform: scale(1.05);
+                  transition: 0.18s all ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar-header-contents" id="topbar">
+        <span class="topbar-logo">
+          <a href="../index.html"> JGNV </a>
+        </span>
+        <span class="topbar-webname"> Photo Galleria </span>
+        <nav style="margin-left: auto">
+          <a href="../index.html" class="article-link">Home</a>
+          <a href="blogs.html" class="article-link">Blogs</a>
+        </nav>
+      </div>
+    </header>
+
+    <a href="#topbar" class="back-to-top" aria-label="Back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        style="width: 24px; height: 24px"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        />
+      </svg>
+      <span>Back to top</span>
+    </a>
+
+    <main>
+      <section class="header-section">
+        <h1>Photo Galleria</h1>
+      </section>
+      <section class="filters-section">
+        <input type="radio" id="all" name="galleria-filter" checked="checked" />
+        <label for="all">All</label>
+        <input type="radio" id="blog" name="galleria-filter" />
+        <label for="blog">Blog</label>
+        <input type="radio" id="self" name="galleria-filter" />
+        <label for="self">Self</label>
+        <input type="radio" id="group" name="galleria-filter" />
+        <label for="group">Group</label>
+      </section>
+      <section class="gallery-section">
+        <!-- left -->
+        <div>
+          <a
+            href="../assets/biography-childhood.png"
+            target="images"
+            class="image-cont self"
+            title="Childhood photo of me. No background."
+          >
+            <img
+              src="../assets/biography-childhood.png"
+              alt="Biography Childhood"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/addiction.jpg"
+            target="images"
+            class="image-cont self"
+            title="Read everywhere = Addiction"
+          >
+            <img
+              src="../assets/photo-dump/addiction.jpg"
+              alt="Read everywhere = Addiction"
+            />
+          </a>
+          <a
+            href="../assets/home-me.png"
+            target="images"
+            class="image-cont self"
+            title="A sillouette photo of me. No background."
+          >
+            <img src="../assets/home-me.png" alt="Me" />
+          </a>
+          <a
+            href="../assets/photo-dump/childhood.jpg"
+            target="images"
+            class="image-cont self"
+            title="Me as a child wearing costume."
+          >
+            <img
+              src="../assets/photo-dump/childhood.jpg"
+              alt="Me as a child wearing costume."
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/eatngo.jpg"
+            target="images"
+            class="image-cont group"
+            title="Eating first before travelling in air"
+          >
+            <img
+              src="../assets/photo-dump/eatngo.jpg"
+              alt="Eating first before travelling in air"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/grouptrain.jpg"
+            target="images"
+            class="image-cont group"
+            title="First train ride with the new train"
+          >
+            <img
+              src="../assets/photo-dump/grouptrain.jpg"
+              alt="First train ride with the new train"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/grouptravel.jpg"
+            target="images"
+            class="image-cont group"
+            title="Family travel to remember"
+          >
+            <img
+              src="../assets/photo-dump/grouptravel.jpg"
+              alt="Family travel to remember"
+            />
+          </a>
+
+          <a
+            href="../assets/photo-dump/india.jpg"
+            target="images"
+            class="image-cont self"
+            title="India in an arabian country"
+          >
+            <img
+              src="../assets/photo-dump/india.jpg"
+              alt="India in an arabian country"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/park.jpg"
+            target="images"
+            class="image-cont group"
+            title="Either a park or a zoo. Can't remember."
+          >
+            <img
+              src="../assets/photo-dump/park.jpg"
+              alt="Either a park or a zoo. Can't remember."
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/yum.jpg"
+            target="images"
+            class="image-cont self"
+            title="Eating food. Neither good nor bad."
+          >
+            <img
+              src="../assets/photo-dump/yum.jpg"
+              alt="Eating food. Neither good nor bad."
+            />
+          </a>
+          <a
+            href="../assets/tech-blog-story-img.jpg"
+            target="images"
+            class="image-cont blog"
+            title="Stack Overflow"
+          >
+            <img src="../assets/tech-blog-story-img.jpg" alt="Stack Overflow" />
+          </a>
+        </div>
+
+        <!-- center -->
+        <div>
+          <a
+            href="../assets/photo-dump/college.jpg"
+            target="images"
+            class="image-cont self"
+            title="Photo of me eating icecream."
+          >
+            <img src="../assets/photo-dump/college.jpg" alt="Icecream Photo" />
+          </a>
+          <a
+            href="../assets/biography-teenage.png"
+            target="images"
+            class="image-cont self"
+            title="Teenage photo of me. No background."
+          >
+            <img
+              src="../assets/biography-teenage.png"
+              alt="Biography Teenage"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/china.jpg"
+            target="images"
+            class="image-cont group"
+            title="China town in the desert"
+          >
+            <img
+              src="../assets/photo-dump/china.jpg"
+              alt="China town in the desert"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/collosseum.jpg"
+            target="images"
+            class="image-cont group"
+            title="Collosseum in Rome but miniature"
+          >
+            <img
+              src="../assets/photo-dump/collosseum.jpg"
+              alt="Collosseum in Rome but miniature"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/freshcut.jpg"
+            target="images"
+            class="image-cont self"
+            title="A cut fresh from the barbers"
+          >
+            <img
+              src="../assets/photo-dump/freshcut.jpg"
+              alt="A cut fresh from the barbers"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/paris.jpg"
+            target="images"
+            class="image-cont group"
+            title="Paris at night"
+          >
+            <img src="../assets/photo-dump/paris.jpg" alt="Paris at night" />
+          </a>
+          <a
+            href="../assets/photo-dump/train.jpg"
+            target="images"
+            class="image-cont self"
+            title="Long walk inside the station"
+          >
+            <img
+              src="../assets/photo-dump/train.jpg"
+              alt="Long walk inside the station"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/titan.jpg"
+            target="images"
+            class="image-cont self"
+            title="Titans are we."
+          >
+            <img src="../assets/photo-dump/titan.jpg" alt="Titans are we." />
+          </a>
+          <a
+            href="../assets/personal-blog-story-img.jpg"
+            target="images"
+            class="image-cont blog"
+            title="Philippines"
+          >
+            <img
+              src="../assets/personal-blog-story-img.jpg"
+              alt="Philippines"
+            />
+          </a>
+          <a
+            href="../assets/tech-blog-story-graph-img.jpg"
+            target="images"
+            class="image-cont blog"
+            title="Sum of questions and answers posted to Stack Overflow from mid-2008 to April 2025"
+          >
+            <img
+              src="../assets/tech-blog-story-graph-img.jpg"
+              alt="Stack overflow answers line graph."
+            />
+          </a>
+        </div>
+
+        <!-- right -->
+        <div>
+          <a
+            href="../assets/biography-college.png"
+            target="images"
+            class="image-cont self"
+            title="College photo of me. No background."
+          >
+            <img
+              src="../assets/biography-college.png"
+              alt="Biography College"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/bdayfather.jpg"
+            target="images"
+            class="image-cont group"
+            title="Best restaurant and a birthday father"
+          >
+            <img
+              src="../assets/photo-dump/bdayfather.jpg"
+              alt="Best restaurant and a birthday father"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/blvd.jpg"
+            target="images"
+            class="image-cont group"
+            title="Aeroville Boulevard"
+          >
+            <img
+              src="../assets/photo-dump/blvd.jpg"
+              alt="Aeroville Boulevard"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/buffet.jpg"
+            target="images"
+            class="image-cont self"
+            title="Reaction to a discounted buffet"
+          >
+            <img
+              src="../assets/photo-dump/buffet.jpg"
+              alt="Reaction to a discounted buffet"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/egypt.jpg"
+            target="images"
+            class="image-cont group"
+            title="Egyptian Hyroglyphs at its finest"
+          >
+            <img
+              src="../assets/photo-dump/egypt.jpg"
+              alt="Egyptian Hyroglyphs at its finest"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/grasstoucher.jpg"
+            target="images"
+            class="image-cont self"
+            title="Vitamin D intake after long seclusion"
+          >
+            <img
+              src="../assets/photo-dump/grasstoucher.jpg"
+              alt="Vitamin D intake after long seclusion"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/oldme.jpg"
+            target="images"
+            class="image-cont self"
+            title="The old me"
+          >
+            <img src="../assets/photo-dump/oldme.jpg" alt="The old me" />
+          </a>
+          <a
+            href="../assets/photo-dump/siblings.jpg"
+            target="images"
+            class="image-cont group"
+            title="Siblings"
+          >
+            <img src="../assets/photo-dump/siblings.jpg" alt="Siblings" />
+          </a>
+          <a
+            href="../assets/photo-dump/travel.jpg"
+            target="images"
+            class="image-cont self"
+            title="A goodbye walk to the airport."
+          >
+            <img
+              src="../assets/photo-dump/travel.jpg"
+              alt="A goodbye walk to the airport."
+            />
+          </a>
+          <a
+            href="../assets/career-blog-story-img.jpg"
+            target="images"
+            class="image-cont blog"
+            title="Intersection Sign indicating Career Paths"
+          >
+            <img
+              src="../assets/career-blog-story-img.jpg"
+              alt="Intersection Sign"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 By me of course <mark>Valencerina</mark>. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>
