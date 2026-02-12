@@ -27,7 +27,10 @@
           .self,
         &.filters-section:has(input[type="radio"]#blog:checked)
           ~ section.gallery-section
-          .group {
+          .group,
+        &.filters-section:has(input[type="radio"]#blog:checked)
+          ~ section.gallery-section
+          .food {
           width: 0px;
           margin-bottom: 0px;
         }
@@ -37,7 +40,10 @@
           .blog,
         &.filters-section:has(input[type="radio"]#self:checked)
           ~ section.gallery-section
-          .group {
+          .group,
+        &.filters-section:has(input[type="radio"]#self:checked)
+          ~ section.gallery-section
+          .food {
           width: 0px;
           margin-bottom: 0px;
         }
@@ -47,7 +53,23 @@
           .blog,
         &.filters-section:has(input[type="radio"]#group:checked)
           ~ section.gallery-section
-          .self {
+          .self,
+        &.filters-section:has(input[type="radio"]#group:checked)
+          ~ section.gallery-section
+          .food {
+          width: 0px;
+          margin-bottom: 0px;
+        }
+
+        &.filters-section:has(input[type="radio"]#food:checked)
+          ~ section.gallery-section
+          .blog,
+        &.filters-section:has(input[type="radio"]#food:checked)
+          ~ section.gallery-section
+          .self,
+        &.filters-section:has(input[type="radio"]#food:checked)
+          ~ section.gallery-section
+          .group {
           width: 0px;
           margin-bottom: 0px;
         }
@@ -179,11 +201,13 @@
         <input type="radio" id="all" name="galleria-filter" checked="checked" />
         <label for="all">All</label>
         <input type="radio" id="blog" name="galleria-filter" />
-        <label for="blog">Blog</label>
+        <label for="blog">Website</label>
         <input type="radio" id="self" name="galleria-filter" />
         <label for="self">Self</label>
         <input type="radio" id="group" name="galleria-filter" />
         <label for="group">Group</label>
+        <input type="radio" id="food" name="galleria-filter" />
+        <label for="food">Food</label>
       </section>
       <section class="gallery-section">
         <!-- left -->
@@ -191,7 +215,7 @@
           <a
             href="../assets/biography-childhood.png"
             target="images"
-            class="image-cont self"
+            class="image-cont blog"
             title="Childhood photo of me. No background."
           >
             <img
@@ -213,7 +237,7 @@
           <a
             href="../assets/home-me.png"
             target="images"
-            class="image-cont self"
+            class="image-cont blog"
             title="A sillouette photo of me. No background."
           >
             <img src="../assets/home-me.png" alt="Me" />
@@ -262,6 +286,17 @@
               alt="Family travel to remember"
             />
           </a>
+          <a
+            href="../assets/photo-dump/newyear.jpg"
+            target="images"
+            class="image-cont food"
+            title="New year feast with relatives"
+          >
+            <img
+              src="../assets/photo-dump/newyear.jpg"
+              alt="New year feast with relatives"
+            />
+          </a>
 
           <a
             href="../assets/photo-dump/india.jpg"
@@ -286,6 +321,17 @@
             />
           </a>
           <a
+            href="../assets/photo-dump/shrimp.jpg"
+            target="images"
+            class="image-cont food"
+            title="Tempura my favorite. My number one dish."
+          >
+            <img
+              src="../assets/photo-dump/shrimp.jpg"
+              alt="Tempura my favorite. My number one dish."
+            />
+          </a>
+          <a
             href="../assets/photo-dump/yum.jpg"
             target="images"
             class="image-cont self"
@@ -304,6 +350,28 @@
           >
             <img src="../assets/tech-blog-story-img.jpg" alt="Stack Overflow" />
           </a>
+          <a
+            href="../assets/photo-dump/bread.jpg"
+            target="images"
+            class="image-cont food"
+            title="Bread given by one of the best professor."
+          >
+            <img
+              src="../assets/photo-dump/bread.jpg"
+              alt="Bread given by one of the best professor."
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/mafia.jpg"
+            target="images"
+            class="image-cont group"
+            title="Party with mafia costume"
+          >
+            <img
+              src="../assets/photo-dump/mafia.jpg"
+              alt="Party with mafia costume!"
+            />
+          </a>
         </div>
 
         <!-- center -->
@@ -319,12 +387,23 @@
           <a
             href="../assets/biography-teenage.png"
             target="images"
-            class="image-cont self"
+            class="image-cont blog"
             title="Teenage photo of me. No background."
           >
             <img
               src="../assets/biography-teenage.png"
               alt="Biography Teenage"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/drinks.jpg"
+            target="images"
+            class="image-cont food"
+            title="Winner gets drinks!"
+          >
+            <img
+              src="../assets/photo-dump/drinks.jpg"
+              alt="Winner gets drinks!"
             />
           </a>
           <a
@@ -350,6 +429,17 @@
             />
           </a>
           <a
+            href="../assets/photo-dump/saffron.jpg"
+            target="images"
+            class="image-cont food"
+            title="Middle eastern restaurant"
+          >
+            <img
+              src="../assets/photo-dump/saffron.jpg"
+              alt="Middle eastern restaurant"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/freshcut.jpg"
             target="images"
             class="image-cont self"
@@ -358,6 +448,17 @@
             <img
               src="../assets/photo-dump/freshcut.jpg"
               alt="A cut fresh from the barbers"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/hotchicks.jpg"
+            target="images"
+            class="image-cont food"
+            title="Fulfilling chicken cravings"
+          >
+            <img
+              src="../assets/photo-dump/hotchicks.jpg"
+              alt="Fulfilling chicken cravings"
             />
           </a>
           <a
@@ -409,6 +510,17 @@
               alt="Stack overflow answers line graph."
             />
           </a>
+          <a
+            href="../assets/photo-dump/band.jpg"
+            target="images"
+            class="image-cont group"
+            title="Band boys disbanded."
+          >
+            <img
+              src="../assets/photo-dump/band.jpg"
+              alt="Band boys disbanded."
+            />
+          </a>
         </div>
 
         <!-- right -->
@@ -416,7 +528,7 @@
           <a
             href="../assets/biography-college.png"
             target="images"
-            class="image-cont self"
+            class="image-cont blog"
             title="College photo of me. No background."
           >
             <img
@@ -444,6 +556,28 @@
             <img
               src="../assets/photo-dump/blvd.jpg"
               alt="Aeroville Boulevard"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/chicken.jpg"
+            target="images"
+            class="image-cont food"
+            title="Hey look! Chicken!"
+          >
+            <img
+              src="../assets/photo-dump/chicken.jpg"
+              alt="Hey look! Chicken!"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/tobesillohuette.jpg"
+            target="images"
+            class="image-cont self"
+            title="The side angle of a to-be-sillouette photo of me."
+          >
+            <img
+              src="../assets/photo-dump/tobesillohuette.jpg"
+              alt="The side angle of a to-be-sillouette photo of me."
             />
           </a>
           <a
@@ -515,6 +649,17 @@
             <img
               src="../assets/career-blog-story-img.jpg"
               alt="Intersection Sign"
+            />
+          </a>
+          <a
+            href="../assets/photo-dump/noodles.jpg"
+            target="images"
+            class="image-cont food"
+            title="Breakfast noodles"
+          >
+            <img
+              src="../assets/photo-dump/noodles.jpg"
+              alt="Breakfast noodles"
             />
           </a>
         </div>
