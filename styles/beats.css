@@ -1,0 +1,9 @@
+.beats-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1280px;
+    width: 100%;
+    min-height: 100vh;
+}

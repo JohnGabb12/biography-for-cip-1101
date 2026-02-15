@@ -185,10 +185,6 @@ header {
   bottom: -3rem;
 }
 
-.topbar-nav {
-  margin-left: auto;
-}
-
 .side-nav {
   display: flex;
   flex-direction: column;
