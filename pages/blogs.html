@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+    <link rel="stylesheet" type="text/css" href="../styles/blogList.css" />
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
     />
     <title>Blogs</title>
-    <style></style>
   </head>
   <body>
     <header>
@@ -20,28 +20,55 @@
         <span class="topbar-logo">
           <a href="../index.html"> JGNV </a>
         </span>
-        <span class="topbar-webname"> Biography </span>
+        <span class="topbar-webname"> Blogs List </span>
         <nav style="margin-left: auto">
           <a href="../index.html" class="article-link">Home</a>
         </nav>
       </div>
     </header>
 
-    Page under construction...
+    <main>
+      <section class="blogs-section">
+        <h1 class="blogs-title">Blogs</h1>
 
-    <nav
-      style="
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        font-size: 1.2em;
-        padding: 2em;
-      "
-    >
-      <a href="../index.html">Back</a>
-      <a href="tech-blog-story.html">Tech Blog Story</a>
-      <a href="personal-blog-story.html">Personal Blog Story</a>
-      <a href="career-blog-story.html">Career Blog Story</a>
-    </nav>
+        <div class="blogs-container">
+          <a href="career-blog-story.html" class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-card-tag">Career</span>
+              <span class="blog-card-date">Thursday, January 29, 2026</span>
+            </div>
+            <h2 class="blog-card-title">
+              Future Goals? I'm Just Trying to Get a Tomorrow.
+            </h2>
+          </a>
+          <a href="personal-blog-story.html" class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-card-tag">Personal</span>
+              <span class="blog-card-date">Thursday, January 15, 2026</span>
+            </div>
+            <h2 class="blog-card-title">
+              Post-Overseas: Discovering the Philippines as a Filipino.
+            </h2>
+          </a>
+          <a href="tech-blog-story.html" class="blog-card">
+            <div class="blog-card-meta">
+              <span class="blog-card-tag">Tech</span>
+              <span class="blog-card-date">Tuesday, January 13, 2026</span>
+            </div>
+            <h2 class="blog-card-title">
+              The Inevitable Decline of an Unofficial University that Created
+              Developers.
+            </h2>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 By me of course <mark>Valencerina</mark>. All rights
+        reserved.
+      </p>
+    </footer>
   </body>
 </html>

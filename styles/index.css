@@ -381,31 +381,6 @@ header {
   margin-bottom: 0;
 }
 
-.h-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 4rem 0;
-
-  & img {
-    width: 20px;
-    aspect-ratio: square;
-    /* color svg to #442129 */
-    filter: brightness(0) saturate(100%) invert(22%) sepia(44%) saturate(749%)
-      hue-rotate(335deg) brightness(89%) contrast(85%);
-    &.small {
-      width: 15px;
-    }
-  }
-
-  & div {
-    height: 1px;
-    width: 100%;
-    background-color: var(--text-dark);
-  }
-}
-
 .blog-hero {
   background-color: var(--base-color-200);
   width: 100%;
