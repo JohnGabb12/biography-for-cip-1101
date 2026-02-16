@@ -1,3 +1,12 @@
+main {
+  max-width: 1280px;
+}
+
+.header-section {
+  margin-top: 2em;
+  text-align: center;
+}
+
 .beats-section {
   display: flex;
   flex-direction: column;
@@ -8,11 +17,266 @@
   min-height: 100vh;
 }
 
+.filter-open-section:has(input#filter-open:checked) + .filters-section {
+  height: fit-content;
+  overflow: visible;
+}
+
+.filters-section:has(input[type="radio"]#jpop-filter:checked) ~ section.beats-section .beats-card:not(.jpop) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#indie-filter:checked) ~ section.beats-section .beats-card:not(.indie) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#pop-filter:checked) ~ section.beats-section .beats-card:not(.pop) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#alter-filter:checked) ~ section.beats-section .beats-card:not(.alternative) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#vocaloid-filter:checked) ~ section.beats-section .beats-card:not(.vocaloid) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#vocasynth-filter:checked) ~ section.beats-section .beats-card:not(.vocasynth) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#shimokita-filter:checked) ~ section.beats-section .beats-card:not(.shimokita) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#pop-rock-filter:checked) ~ section.beats-section .beats-card:not(.pop-rock) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#domestic-filter:checked) ~ section.beats-section .beats-card:not(.domestic) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#classical-filter:checked) ~ section.beats-section .beats-card:not(.classical) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#urban-gospel-filter:checked) ~ section.beats-section .beats-card:not(.urbangospel) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#electropop-filter:checked) ~ section.beats-section .beats-card:not(.electropop) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#fingerstyle-filter:checked) ~ section.beats-section .beats-card:not(.fingerstyle) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#acoustic-filter:checked) ~ section.beats-section .beats-card:not(.acoustic) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.filters-section:has(input[type="radio"]#instrumental-filter:checked) ~ section.beats-section .beats-card:not(.instrumental) {
+  height: 0px;
+  margin-bottom: 0px;
+  min-height: 0px;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 'All' shows everything; no rule needed because radios default to no collapse when all is checked */
+
+.filter-open-section {
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+
+  & input[type="checkbox"] {
+    display: none;
+
+    &:checked + label {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      transition: 0.18s all ease-in-out;
+
+      &::before {
+        content: "Close";
+        margin-right: 5px;
+      }
+    }
+  }
+
+  & .filter-open-label {
+    cursor: pointer;
+    background-color: var(--transparent);
+    color: var(--primary-color);
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    transition: 0.18s all ease-in-out;
+
+    &::before {
+      content: "Open";
+      margin-right: 5px;
+    }
+
+    &:hover {
+      background-color: var(--base-color-300);
+    }
+  }
+}
+
+.filters-section {
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+
+  & input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      transition: 0.18s all ease-in-out;
+
+      & span.count-badge {
+        background-color: var(--secondary-color-200);
+        color: var(--secondary-color-50);
+      }
+    }
+  }
+
+  & label {
+    cursor: pointer;
+    background-color: var(--transparent);
+    color: var(--primary-color);
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    transition: 0.18s all ease-in-out;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+
+    &:hover {
+      background-color: var(--base-color-300);
+    }
+
+    & span.count-badge {
+      background-color: var(--accent-color-50);
+      color: var(--accent-color-200);
+      transition: all 0.18s ease-in-out;
+      font-size: 0.8em;
+      padding: 0.125em 0.25em;
+      border-radius: 5px;
+      line-height: 1em;
+    }
+  }
+}
+
 .beats-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
   width: 100%;
 }
 
@@ -25,15 +289,63 @@
   align-items: center;
   justify-content: end;
   position: relative;
+  margin-bottom: 20px;
+
+  &:nth-child(1) .beats-card-img {
+    border-color: var(--accent-color);
+  }
+  &:nth-child(2) .beats-card-img {
+    border-color: var(--secondary-color);
+  }
+  &:nth-child(3) .beats-card-img {
+    border-color: var(--extra-color);
+  }
+  &:nth-child(4) .beats-card-img {
+    border-color: var(--accent-color);
+  }
+  &:nth-child(5) .beats-card-img {
+    border-color: var(--secondary-color);
+  }
+  &:nth-child(6) .beats-card-img {
+    border-color: var(--extra-color);
+  }
+  &:nth-child(7) .beats-card-img {
+    border-color: var(--accent-color);
+  }
+  &:nth-child(8) .beats-card-img {
+    border-color: var(--secondary-color);
+  }
+  &:nth-child(9) .beats-card-img {
+    border-color: var(--extra-color);
+  }
+  &:nth-child(10) .beats-card-img {
+    border-color: var(--accent-color);
+  }
+  &:nth-child(11) .beats-card-img {
+    border-color: var(--secondary-color);
+  }
+  &:nth-child(12) .beats-card-img {
+    border-color: var(--extra-color);
+  }
 
   & .beats-card-vinyl {
     position: absolute;
     width: 30%;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    height: fit-content;
     left: 0;
     z-index: 0;
     fill: var(--primary-color);
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      &:hover {
+        rotate: 360deg;
+        transition: rotate 0.5s ease;
+      }
+    }
   }
 
   & .beats-card-img {
@@ -42,6 +354,21 @@
     object-fit: cover;
     height: 100%;
     z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left-style: solid;
+    border-left-width: 5px;
+    transition: all 0.3s ease;
+    border-color: var(--accent-color);
+    &::hover {
+      border-left-width: 10px;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   & .beats-card-info {
@@ -59,6 +386,7 @@
       display: flex;
       flex-direction: column;
       gap: 0.1em;
+      font-family: var(--heading-font);
 
       & .beats-card-title {
         display: flex;
@@ -67,7 +395,7 @@
         gap: 1em;
         text-decoration: none;
         position: relative;
-        width: 50%;
+        width: 100%;
 
         &:hover {
           & .beats-card-title-text {
@@ -89,12 +417,8 @@
           color: var(--text-dark);
           position: absolute;
           left: 0;
-          text-wrap: nowrap;
+          width: 100%;
           transition: color 0.3s ease;
-
-          &:not(.jap) {
-            font-family: var(--heading-font);
-          }
         }
 
         & .beats-card-title-eng-text {
@@ -124,7 +448,7 @@
         gap: 1em;
         text-decoration: none;
         position: relative;
-        width: 50%;
+        width: 100%;
 
         &:hover {
           & .beats-card-artist-text {
@@ -146,12 +470,8 @@
           color: var(--text-dark);
           position: absolute;
           left: 0;
-          text-wrap: nowrap;
+          width: 100%;
           transition: color 0.3s ease;
-
-          &:not(.jap) {
-            font-family: var(--heading-font);
-          }
         }
 
         & .beats-card-artist-eng-text {
@@ -201,6 +521,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
         gap: 0.5em;
 
         & div:nth-child(1) {
@@ -247,6 +569,9 @@
 
     &.two a {
       height: calc(100% / 2);
+    }
+    &.one a {
+      height: 100%;
     }
 
     & a {

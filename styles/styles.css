@@ -33,7 +33,7 @@
 
   --no-color: rgba(0, 0, 0, 0);
 
-  --body-font: "Poppins", "Lexend", "Manrope", sans-serif;
+  --body-font: "Lexend", "Poppins", "Manrope", sans-serif;
   --heading-font: "Lora", "EB Garamond", "Playfair Display", serif;
 
   --text-heading-1-size: 4rem;
@@ -62,6 +62,7 @@ body {
   font-family: var(--body-font);
   line-height: 1.6;
   margin: 0;
+  font-weight: normal;
 }
 
 h1,

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/galleria.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,158 +14,6 @@
     />
 
     <title>Photo Galleria</title>
-    <style>
-      main {
-        width: 80%;
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      section {
-        &.filters-section:has(input[type="radio"]#blog:checked)
-          ~ section.gallery-section
-          .self,
-        &.filters-section:has(input[type="radio"]#blog:checked)
-          ~ section.gallery-section
-          .group,
-        &.filters-section:has(input[type="radio"]#blog:checked)
-          ~ section.gallery-section
-          .food {
-          width: 0px;
-          margin-bottom: 0px;
-          min-height: 0px;
-        }
-
-        &.filters-section:has(input[type="radio"]#self:checked)
-          ~ section.gallery-section
-          .blog,
-        &.filters-section:has(input[type="radio"]#self:checked)
-          ~ section.gallery-section
-          .group,
-        &.filters-section:has(input[type="radio"]#self:checked)
-          ~ section.gallery-section
-          .food {
-          width: 0px;
-          margin-bottom: 0px;
-          min-height: 0px;
-        }
-
-        &.filters-section:has(input[type="radio"]#group:checked)
-          ~ section.gallery-section
-          .blog,
-        &.filters-section:has(input[type="radio"]#group:checked)
-          ~ section.gallery-section
-          .self,
-        &.filters-section:has(input[type="radio"]#group:checked)
-          ~ section.gallery-section
-          .food {
-          width: 0px;
-          margin-bottom: 0px;
-          min-height: 0px;
-        }
-
-        &.filters-section:has(input[type="radio"]#food:checked)
-          ~ section.gallery-section
-          .blog,
-        &.filters-section:has(input[type="radio"]#food:checked)
-          ~ section.gallery-section
-          .self,
-        &.filters-section:has(input[type="radio"]#food:checked)
-          ~ section.gallery-section
-          .group {
-          width: 0px;
-          margin-bottom: 0px;
-          min-height: 0px;
-        }
-
-        &.header-section {
-          margin-top: 2em;
-          text-align: center;
-        }
-
-        &.filters-section {
-          font-size: 1.2em;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          gap: 0.5em;
-
-          & input[type="radio"] {
-            display: none;
-
-            &:checked + label {
-              background-color: var(--primary-color);
-              color: var(--text-light);
-              transition: 0.18s all ease-in-out;
-            }
-          }
-
-          & label {
-            cursor: pointer;
-            background-color: var(--transparent);
-            color: var(--primary-color);
-            padding: 0.5em 1em;
-            border-radius: 2em;
-            transition: 0.18s all ease-in-out;
-            display: inline-block;
-
-            &:hover {
-              background-color: var(--base-color-200);
-            }
-          }
-        }
-
-        &.gallery-section {
-          min-height: 100vh;
-          padding-bottom: 5em;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: auto;
-          gap: 1em;
-          margin-top: 2em;
-
-          & div {
-            border-radius: 0.5em;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
-
-            & .image-cont {
-              width: 100%;
-              height: auto;
-              object-fit: cover;
-              display: block;
-              border-radius: 15px;
-              background-color: var(--base-color-50);
-              overflow: hidden;
-              max-height: 50em;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 1em;
-              min-height: 5em;
-
-              & img {
-                display: block;
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                transition: 0.18s all ease-in-out;
-
-                &:hover {
-                  transform: scale(1.05);
-                  transition: 0.18s all ease-in-out;
-                }
-              }
-            }
-          }
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -206,15 +55,15 @@
       </section>
       <section class="filters-section">
         <input type="radio" id="all" name="galleria-filter" checked="checked" />
-        <label for="all">All</label>
+        <label for="all">All<span class="count-badge"> 52 </span></label>
         <input type="radio" id="blog" name="galleria-filter" />
-        <label for="blog">Website</label>
+        <label for="blog">Website <span class="count-badge"> 18 </span></label>
         <input type="radio" id="self" name="galleria-filter" />
-        <label for="self">Self</label>
+        <label for="self">Self <span class="count-badge"> 13 </span></label>
         <input type="radio" id="group" name="galleria-filter" />
-        <label for="group">Group</label>
+        <label for="group">Group <span class="count-badge"> 13 </span></label>
         <input type="radio" id="food" name="galleria-filter" />
-        <label for="food">Food</label>
+        <label for="food">Food <span class="count-badge"> 8 </span></label>
       </section>
       <section class="gallery-section">
         <!-- left -->
@@ -239,6 +88,17 @@
             <img
               src="../assets/photo-dump/addiction.jpg"
               alt="Read everywhere = Addiction"
+            />
+          </a>
+          <a
+            href="../assets/music-thumb/deep-indigo.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Deep Indigo by Yorushika"
+          >
+            <img
+              src="../assets/music-thumb/deep-indigo.jpg"
+              alt="Deep Indigo by Yorushika"
             />
           </a>
           <a
@@ -272,6 +132,17 @@
             />
           </a>
           <a
+            href="../assets/music-thumb/sparkle.png"
+            target="_self"
+            class="image-cont blog"
+            title="Sparkle by RADWIMPS covered by Edward Ong"
+          >
+            <img
+              src="../assets/music-thumb/sparkle.png"
+              alt="Sparkle by RADWIMPS covered by Edward Ong"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/grouptrain.jpg"
             target="_self"
             class="image-cont group"
@@ -292,6 +163,14 @@
               src="../assets/photo-dump/grouptravel.jpg"
               alt="Family travel to remember"
             />
+          </a>
+          <a
+            href="../assets/home-tile.png"
+            target="_self"
+            class="image-cont blog"
+            title="A tile pattern used in the home page."
+          >
+            <img src="../assets/home-tile.png" alt="Pattern Tile" />
           </a>
           <a
             href="../assets/photo-dump/newyear.jpg"
@@ -328,6 +207,17 @@
             />
           </a>
           <a
+            href="../assets/music-thumb/sugar-song-to-bitter-step.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Sugar Song to Bitter Step by UNISON SQUARE GARDEN"
+          >
+            <img
+              src="../assets/music-thumb/sugar-song-to-bitter-step.jpg"
+              alt="Sugar Song to Bitter Step by UNISON SQUARE GARDEN"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/shrimp.jpg"
             target="_self"
             class="image-cont food"
@@ -348,14 +238,6 @@
               src="../assets/photo-dump/yum.jpg"
               alt="Eating food. Neither good nor bad."
             />
-          </a>
-          <a
-            href="../assets/tech-blog-story-img.jpg"
-            target="_self"
-            class="image-cont blog"
-            title="Stack Overflow"
-          >
-            <img src="../assets/tech-blog-story-img.jpg" alt="Stack Overflow" />
           </a>
           <a
             href="../assets/photo-dump/bread.jpg"
@@ -403,6 +285,17 @@
             />
           </a>
           <a
+            href="../assets/music-thumb/world-is-mine.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="World Is Mine by ryo (supercell) feat. Hatsune Miku"
+          >
+            <img
+              src="../assets/music-thumb/world-is-mine.jpg"
+              alt="World Is Mine by ryo (supercell) feat. Hatsune Miku"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/drinks.jpg"
             target="_self"
             class="image-cont food"
@@ -445,6 +338,14 @@
               src="../assets/photo-dump/saffron.jpg"
               alt="Middle eastern restaurant"
             />
+          </a>
+          <a
+            href="../assets/vinyl.png"
+            target="_self"
+            class="image-cont blog"
+            title="Vinyl record."
+          >
+            <img src="../assets/vinyl.png" alt="Vinyl Record" />
           </a>
           <a
             href="../assets/photo-dump/freshcut.jpg"
@@ -518,6 +419,17 @@
             />
           </a>
           <a
+            href="../assets/music-thumb/comedy.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Comedy by Gen Hoshino"
+          >
+            <img
+              src="../assets/music-thumb/comedy.jpg"
+              alt="Comedy by Gen Hoshino"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/band.jpg"
             target="_self"
             class="image-cont group"
@@ -555,6 +467,17 @@
             />
           </a>
           <a
+            href="../assets/music-thumb/chocomint.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Chocomint by GYARI"
+          >
+            <img
+              src="../assets/music-thumb/chocomint.jpg"
+              alt="Chocomint by GYARI"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/blvd.jpg"
             target="_self"
             class="image-cont group"
@@ -585,6 +508,17 @@
             <img
               src="../assets/photo-dump/tobesillohuette.jpg"
               alt="The side angle of a to-be-sillouette photo of me."
+            />
+          </a>
+          <a
+            href="../assets/music-thumb/in-jesus-name.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="In Jesus Name by Israel & New Breed"
+          >
+            <img
+              src="../assets/music-thumb/in-jesus-name.jpg"
+              alt="In Jesus Name by Israel & New Breed"
             />
           </a>
           <a
@@ -637,6 +571,17 @@
             <img src="../assets/photo-dump/siblings.jpg" alt="Siblings" />
           </a>
           <a
+            href="../assets/music-thumb/pompeii.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Pompeii MMXXIII by Bastille and Hans Zimmer"
+          >
+            <img
+              src="../assets/music-thumb/pompeii.jpg"
+              alt="Pompeii MMXXIII by Bastille and Hans Zimmer"
+            />
+          </a>
+          <a
             href="../assets/photo-dump/travel.jpg"
             target="_self"
             class="image-cont self"
@@ -668,6 +613,14 @@
               src="../assets/photo-dump/noodles.jpg"
               alt="Breakfast noodles"
             />
+          </a>
+          <a
+            href="../assets/tech-blog-story-img.jpg"
+            target="_self"
+            class="image-cont blog"
+            title="Stack Overflow"
+          >
+            <img src="../assets/tech-blog-story-img.jpg" alt="Stack Overflow" />
           </a>
         </div>
       </section>
