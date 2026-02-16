@@ -1,9 +1,293 @@
 .beats-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.beats-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.beats-card {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+
+  & .beats-card-vinyl {
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    left: 0;
+    z-index: 0;
+    fill: var(--primary-color);
+  }
+
+  & .beats-card-img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 100%;
+    z-index: 1;
+  }
+
+  & .beats-card-info {
+    background-color: var(--base-color-00);
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 1280px;
-    width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    box-sizing: border-box;
+    width: 50%;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    & .beats-card-title-artist-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1em;
+
+      & .beats-card-title {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 1em;
+        text-decoration: none;
+        position: relative;
+        width: 50%;
+
+        &:hover {
+          & .beats-card-title-text {
+            color: rgba(0, 0, 0, 0);
+          }
+          & .beats-card-title-eng-text {
+            color: var(--secondary-color);
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        & .beats-card-title-text {
+          font-size: 2.2rem;
+          font-weight: 900;
+          line-height: 1.2;
+          color: var(--text-dark);
+          position: absolute;
+          left: 0;
+          text-wrap: nowrap;
+          transition: color 0.3s ease;
+
+          &:not(.jap) {
+            font-family: var(--heading-font);
+          }
+        }
+
+        & .beats-card-title-eng-text {
+          font-size: 2.2rem;
+          line-height: 1;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0);
+          font-family: var(--heading-font);
+          transition: color 0.3s ease;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+          }
+        }
+      }
+
+      & .beats-card-artist {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 1em;
+        text-decoration: none;
+        position: relative;
+        width: 50%;
+
+        &:hover {
+          & .beats-card-artist-text {
+            color: rgba(0, 0, 0, 0);
+          }
+          & .beats-card-artist-eng-text {
+            color: var(--accent-color);
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+
+        & .beats-card-artist-text {
+          font-size: 1.2rem;
+          font-weight: 900;
+          line-height: 1.2;
+          color: var(--text-dark);
+          position: absolute;
+          left: 0;
+          text-wrap: nowrap;
+          transition: color 0.3s ease;
+
+          &:not(.jap) {
+            font-family: var(--heading-font);
+          }
+        }
+
+        & .beats-card-artist-eng-text {
+          font-size: 1.2rem;
+          line-height: 1;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 0);
+          font-family: var(--heading-font);
+          transition: color 0.3s ease;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    & .beats-card-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.25em;
+      margin-top: 0.25em;
+      width: 100%;
+
+      & .beats-card-album-date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 1em;
+
+        & .beats-card-album-date-seperator {
+          width: 5px;
+          height: 5px;
+          background-color: var(--base-color-200);
+          border-radius: 50%;
+        }
+      }
+
+      & .beats-card-genre {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+
+        & div:nth-child(1) {
+          background-color: var(--accent-color-50);
+          color: var(--accent-color-200);
+        }
+        & div:nth-child(2) {
+          background-color: var(--secondary-color-50);
+          color: var(--secondary-color-200);
+        }
+        & div:nth-child(3) {
+          background-color: var(--extra-color-50);
+          color: var(--extra-color-200);
+        }
+
+        & div {
+          font-size: 0.9rem;
+          color: var(--accent-color-200);
+          padding: 0.125em 0.75em;
+          background-color: var(--accent-color-50);
+          border-radius: 20px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    & .beats-card-description {
+      margin-top: 2em;
+      border-top: 1px solid var(--base-color-200);
+      padding-top: 1em;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      line-height: 1.4;
+    }
+  }
+  & .beats-card-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 5%;
+    height: 100%;
+    position: relative;
+
+    &.two a {
+      height: calc(100% / 2);
+    }
+
+    & a {
+      text-decoration: none;
+      color: var(--text-dark);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      font-size: 0.95rem;
+      width: 60%;
+      height: calc(100% / 3);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      padding: 5px;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      fill: var(--base-color-00);
+      background-color: var(--base-color-400);
+
+      &:hover {
+        transform: translateX(0px);
+        fill: white;
+        &.spotify {
+          background-color: #1ed760;
+        }
+
+        &.youtube {
+          background-color: #ff0000;
+        }
+
+        &.soundcloud {
+          background-color: #ff5500;
+        }
+      }
+
+      & svg {
+        width: 80%;
+        aspect-ratio: 1/1;
+      }
+    }
+  }
 }
