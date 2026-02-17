@@ -72,6 +72,18 @@ main {
     border-color: var(--extra-color);
   }
 
+  &:hover iframe, &:hover audio {
+    opacity: 1;
+  }
+
+  & iframe, audio {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
   & .beats-card-vinyl {
     position: absolute;
     width: 30%;
