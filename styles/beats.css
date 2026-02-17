@@ -172,8 +172,6 @@ main {
   pointer-events: none;
 }
 
-/* 'All' shows everything; no rule needed because radios default to no collapse when all is checked */
-
 .filter-open-section {
   font-size: 1em;
   display: flex;
