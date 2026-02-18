@@ -13,7 +13,6 @@ main {
   align-items: center;
   max-width: 1280px;
   min-height: 100vh;
-  background-color: var(--base-color-300);
 }
 
 .film-card-container {
@@ -29,14 +28,15 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: end;
   position: relative;
   margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 1em;
   background-color: var(--base-color-50);
 
   & .film-card-header {
-    background-color: var(--base-color-300);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -45,7 +45,6 @@ main {
       width: 50%;
       display: flex;
       flex-direction: column;
-      background-color: var(--base-color-400);
 
       & .film-card-title-eng-text {
         font-size: 2.5rem;
@@ -99,7 +98,6 @@ main {
       aspect-ratio: 1/1;
       margin-left: 1em;
       margin-right: 1em;
-      background-color: var(--base-color-300);
       height: 5px;
       border-radius: 5px;
     }
@@ -116,10 +114,11 @@ main {
       padding: 1em;
       aspect-ratio: 2/3;
       height: 100%;
+
       & img {
         width: 100%;
-        background-color: var(--base-color-300);
         object-fit: cover;
+        border-radius: 10px;
       }
     }
 
@@ -138,6 +137,88 @@ main {
         height: auto;
         border: none;
         border-radius: 10px;
+      }
+    }
+  }
+
+  & .film-card-genre {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    width: fit-content;
+
+    & span {
+      background-color: var(--accent-color-50);
+      color: var(--accent-color-200);
+      font-size: 0.9rem;
+      padding: 0.125em 0.75em;
+      border-radius: 5px;
+      transition: all 0.18s ease;
+
+      &:hover {
+        background-color: var(--secondary-color-50);
+        color: var(--secondary-color-200);
+      }
+    }
+  }
+
+  & .film-card-synopsis {
+    width: 100%;
+  }
+
+  & .film-card-people {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    width: 50%;
+
+    & .film-card-people-list {
+      display: flex;
+      flex-direction: row;
+      gap: 3em;
+
+      &:hover .film-card-people-label {
+        font-weight: 900;
+      }
+
+      & .film-card-people-label {
+        width: 5em;
+        transition: font-weight 0.18s ease;
+      }
+
+      & .film-card-people-name {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        & a {
+          text-decoration: none;
+          color: var(--secondary-color);
+          transition: all 0.18s ease-in-out;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 3px;
+            border-radius: 3px;
+            background-color: var(--secondary-color);
+            transition: all 0.18s ease;
+          }
+
+          &:hover {
+            color: var(--accent-color);
+
+            &::after {
+              width: 100%;
+              background-color: var(--accent-color);
+            }
+          }
+        }
       }
     }
   }
