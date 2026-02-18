@@ -11,7 +11,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   max-width: 1280px;
   min-height: 100vh;
   background-color: var(--base-color-300);
@@ -35,4 +34,74 @@ main {
   position: relative;
   margin-bottom: 20px;
   background-color: var(--base-color-50);
+
+  & .film-card-header {
+    background-color: var(--base-color-300);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    & .film-card-title {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--base-color-400);
+
+      & .film-card-title-eng-text {
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: var(--heading-font);
+      }
+
+      & .film-card-title-text {
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: var(--heading-font);
+      }
+    }
+
+    & .film-card-rating {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 50%;
+
+      & .film-card-rating-content {
+        display: flex;
+        flex-direction: row;
+
+        & .film-card-rating-star svg {
+          width: 3.5em;
+          aspect-ratio: 1/1;
+          fill: var(--accent-color);
+        }
+        & .film-card-rating-values {
+          display: flex;
+          flex-direction: column;
+          & .film-card-rating-values-top {
+            font-size: 2em;
+            line-height: 0.9;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  & .film-card-meta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .film-card-meta-seperator {
+      width: 5px;
+      aspect-ratio: 1/1;
+      margin-left: 1em;
+      margin-right: 1em;
+      background-color: var(--base-color-300);
+      height: 5px;
+      border-radius: 5px;
+    }
+  }
 }
