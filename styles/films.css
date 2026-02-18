@@ -104,4 +104,9 @@ main {
       border-radius: 5px;
     }
   }
+
+  & .film-card-media {
+    width: 100%;
+    
+  }
 }
