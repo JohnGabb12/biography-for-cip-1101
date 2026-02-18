@@ -13,112 +13,8 @@ main {
   align-items: center;
   padding: 20px;
   max-width: 1280px;
-  width: 100%;
   min-height: 100vh;
-}
-
-.filter-open-section:has(input#filter-open:checked) + .filters-section {
-  height: fit-content;
-  overflow: visible;
-}
-
-.filter-open-section {
-  font-size: 1em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 2em;
-
-  & input[type="checkbox"] {
-    display: none;
-
-    &:checked + label {
-      background-color: var(--primary-color);
-      color: var(--text-light);
-      transition: 0.18s all ease-in-out;
-
-      &::before {
-        content: "Close";
-        margin-right: 5px;
-      }
-    }
-  }
-
-  & .filter-open-label {
-    cursor: pointer;
-    background-color: var(--transparent);
-    color: var(--primary-color);
-    padding: 0.25em 1em;
-    border-radius: 2em;
-    transition: 0.18s all ease-in-out;
-
-    &::before {
-      content: "Open";
-      margin-right: 5px;
-    }
-
-    &:hover {
-      background-color: var(--base-color-300);
-    }
-  }
-}
-
-.filters-section {
-  font-size: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  flex-wrap: wrap;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease;
-
-  & input[type="radio"] {
-    display: none;
-
-    &:checked + label {
-      background-color: var(--primary-color);
-      color: var(--text-light);
-      transition: 0.18s all ease-in-out;
-
-      & span.count-badge {
-        background-color: var(--secondary-color-200);
-        color: var(--secondary-color-50);
-      }
-    }
-  }
-
-  & label {
-    cursor: pointer;
-    background-color: var(--transparent);
-    color: var(--primary-color);
-    padding: 0.25em 1em;
-    border-radius: 2em;
-    transition: 0.18s all ease-in-out;
-    display: inline-block;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5em;
-
-    &:hover {
-      background-color: var(--base-color-300);
-    }
-
-    & span.count-badge {
-      background-color: var(--accent-color-50);
-      color: var(--accent-color-200);
-      transition: all 0.18s ease-in-out;
-      font-size: 0.8em;
-      padding: 0.125em 0.25em;
-      border-radius: 5px;
-      line-height: 1em;
-    }
-  }
+  background-color: var(--base-color-300);
 }
 
 .film-card-container {
@@ -126,4 +22,17 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+.film-card {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: var(--base-color-50);
 }
