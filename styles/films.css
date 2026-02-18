@@ -35,6 +35,7 @@ main {
   box-sizing: border-box;
   padding: 1em;
   background-color: var(--base-color-50);
+  border: 2px solid var(--base-color-200);
 
   & .film-card-header {
     width: 100%;
@@ -166,6 +167,7 @@ main {
 
   & .film-card-synopsis {
     width: 100%;
+    margin-bottom: 1em;
   }
 
   & .film-card-people {
