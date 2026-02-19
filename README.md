@@ -60,6 +60,7 @@ Soso no Furiren
 Japanese Adult-Animation Adventure-Epic Anime Fantasy-Epic
 Hand-Drawn-Animation Iyashikei Shonen Sword-&-Sorcery Adventure
 Elf mage Frieren and her fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her?
+Keiichirou Saitou
 Tsukasa Abe, Kaneshito Yamada
 Atsumi Tanezaki, Kana Ichinose, Mallorie Rodak
 
