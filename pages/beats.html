@@ -1,617 +1,960 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/beats.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="VALENCERINA, JOHN GABRIELLE" />
-  <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
-  <link rel="stylesheet" type="text/css" href="../styles/beats.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" />
+    <title>Music</title>
+  </head>
 
-  <title>Music</title>
-</head>
-
-<body>
-  <header>
-    <div class="topbar-header-contents" id="topbar">
-      <span class="topbar-logo">
-        <a href="../index.html"> JGNV </a>
-      </span>
-      <nav>
-        <a href="../index.html" class="article-link">Home</a>
-        <a href="biography.html" class="article-link">Biography</a>
-        <a href="blogs.html" class="article-link">Blogs</a>
-        <a href="beats.html" class="article-link active">Music</a>
-        <a href="films.html" class="article-link">Films</a>
-          <a href="tvshows.html" class="article-link">Shows</a>
-        <a href="photo-gallery.html" class="article-link">Galleria</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="header-section">
-      <h1>Liked Music</h1>
-    </section>
-    <section class="beats-section">
-      <div class="beats-card-container">
-        <!-- deepindigo -->
-        <div class="beats-card jpop indie shimokita">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/deep-indigo.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/6BV77pE4JyUQUtaqnXeKa5?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/deep-indigo.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://yorushika.com/?lang=en" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text jap"> 藍二乗 </span>
-                <span class="beats-card-title-eng-text"> Deep Indigo </span>
-              </a>
-              <a href="https://yorushika.com/?lang=en" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text jap"> ヨルシカ </span>
-                <span class="beats-card-artist-eng-text"> Yorushika </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div title="Album">Moonlight</div>
-                <div class="beats-card-album-date-seperator"></div>
-                <div>December 27, 2018</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>J-pop</div>
-                <div>Indie Rock</div>
-                <div>shimokita-kei</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              The title <b>藍二乗 (Ai Nijou)</b> translates to
-              <q>indigo squared</q>. The use of 藍 (ai) as the japanese word
-              for indigo, sounding like <q>love</q> (愛) or <q>grief</q> (哀).
-              It is also to allude to the imaginary number i.
-            </div>
-          </div>
-          <div class="beats-card-links">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/album/6kfp9VKKNeeXdGROLCNYjd?si=cxbSgJh9RMG1WgWA1pfXYg" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=4MoRLTAJY_0&si=21y-rCFBngCT13Ua" target="_blank"
-              class="beats-card-link youtube">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-            <!-- soundcloud -->
-            <a href="https://soundcloud.com/second-copy/yorushika-blur?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank" class="beats-card-link soundcloud">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- sugarsong -->
-        <div class="beats-card jpop pop-rock alternative domestic">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/sugar-song-to-bitter-step.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/6bfjEGSR7DyC8MK8cp3ZCp?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/sugar-song-to-bitter-step.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://unison-s-g.com/" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text jap">
-                  シュガーソングとビターステップ
-                </span>
-                <span class="beats-card-title-eng-text">
-                  Sugar Song to Bitter Step
-                </span>
-              </a>
-              <a href="https://unison-s-g.com/" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text">
-                  UNISON SQUARE GARDEN
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  UNISON SQUARE GARDEN
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div title="Album">Dr.Izzy</div>
-                <div class="beats-card-album-date-seperator"></div>
-                <div>May 20, 2015</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>J-pop</div>
-                <div>Pop Rock</div>
-                <div>Alternative Rock</div>
-                <div>Domestic Rock</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              Known for its upbeat, chaotic jazz-fusion-influenced rock sound.
-              It became a massive hit, peaking at number 1 on the Billboard
-              Japan Hot 100. It is widely known as the first ending theme for
-              the series "Blood Blockade Battlefront"
-            </div>
-          </div>
-          <div class="beats-card-links two">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp?si=271cc3480dca4f81" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=mFNFmnYio90&si=JKNZI2B8h5Dd5uep" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- pompei -->
-        <div class="beats-card classical">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/pompeii.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/2jp9d2rVViwwpfHDhWps2v?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/pompeii.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://yorushika.com/?lang=en" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text"> Pompeii MMXXIII </span>
-                <span class="beats-card-title-eng-text">
-                  Pompeii MMXXIII
-                </span>
-              </a>
-              <a href="https://yorushika.com/?lang=en" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text">
-                  Bastille & Hans Zimmer
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  Bastille & Hans Zimmer
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div>September 1, 2023</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>Classical</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              <q>Pompeii MMXXIII</q> is a 10th-anniversary reimagining of
-              Bastille’s 2013 hit, featuring Hans Zimmer and the BBC National
-              Orchestra of Wales.
-            </div>
-          </div>
-          <div class="beats-card-links">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/2jp9d2rVViwwpfHDhWps2v?si=7f355c5d7dc94e81" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=pgS-fLS5eQQ&si=ycUbZzGIjYiY_DEx" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-            <!-- soundcloud -->
-            <a href="https://soundcloud.com/bastilleuk/pompeii-mmxxiii?si=558a98e263564afcbbedb8517ef89352&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank" class="beats-card-link soundcloud" title="Soundcloud link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- chocomint -->
-        <div class="beats-card pop vocaloid vocasynth">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/chocomint.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/1P1RQdvZS4GHKFr5zRsYAR?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/chocomint.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://gyari.com/" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text jap">
-                  絶対にチョコミントを食べるアオイチャン
-                </span>
-                <span class="beats-card-title-eng-text">
-                  Aoi-chan Who Eats ChocoMint No Matter What
-                </span>
-              </a>
-              <a href="https://gyari.com/" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text jap">
-                  GYARI (ココアシガレットP)
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  GYARI (Cocoa Cigarette P)
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div title="Album">Chocomintopia</div>
-                <div class="beats-card-album-date-seperator"></div>
-                <div>August 9, 2019</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>Pop</div>
-                <div>Vocaloid</div>
-                <div>Vocasynth</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              Humorous, upbeat track about Aoi-chan eating chocolate mint ice
-              cream for every meal, despite Akane's confusion. It features
-              catchy melodies and a song driven by characters featuring
-              animated PVs.
-            </div>
-          </div>
-          <div class="beats-card-links">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/1P1RQdvZS4GHKFr5zRsYAR?si=ae2fcbfa10654fee" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=WEgsPVFyhGU&si=pWOJA6M2u7cWWXHd" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-            <!-- soundcloud -->
-            <a href="https://soundcloud.com/shirohalily/gyari-aoi-chan-is-going-to-eat-choc-mint-ice-cream-no-matter-what?si=bc65e19ecbc6454babc8c70b29231459&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank" class="beats-card-link soundcloud" title="Soundcloud link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- injesusname -->
-        <div class="beats-card urbangospel">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/in-jesus-name.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/08MelkdJqbh68USUjAfr2T?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/in-jesus-name.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://israelandnewbreed.com/" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text"> In Jesus Name </span>
-                <span class="beats-card-title-eng-text"> In Jesus Name </span>
-              </a>
-              <a href="https://israelandnewbreed.com/" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text">
-                  Israel & New Breed
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  Israel & New Breed
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div title="Album">Alive in Asia</div>
-                <div class="beats-card-album-date-seperator"></div>
-                <div>June 23, 2015</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>Urban Gospel</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              While famously covered by Israel & New Breed on Covered: Alive
-              in Asia, the song was co-written by Israel Houghton and Darlene
-              Zschech, appearing on Zschech's 2013 live album Revealing Jesus.
-              It is a frequently used worship song often played at a high
-              energy, as seen in performances at Lakewood Church.
-            </div>
-          </div>
-          <div class="beats-card-links two">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/08MelkdJqbh68USUjAfr2T?si=5a6f14876087404e" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=qehwr2MMTqg&si=ul_d8Li6-tXbHxt1" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- comedy -->
-        <div class="beats-card jpop pop">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/comedy.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/5SuOikwiRyPMVoIQDJUgSV?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/comedy.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://www.hoshinogen.com/" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text"> Comedy </span>
-                <span class="beats-card-title-eng-text"> Comedy </span>
-              </a>
-              <a href="https://www.hoshinogen.com/" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text jap"> 星野源 </span>
-                <span class="beats-card-artist-eng-text"> Gen Hoshino </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div>April 8, 2022</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>J-pop</div>
-                <div>Pop</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              Frequently listed among his top, known for its lighthearted,
-              melodic, and heardfelt style. It was later included on the
-              ending theme for the series SPYxFAMILY.
-            </div>
-          </div>
-          <div class="beats-card-links">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=d8f67fbc30164b35" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=URR_Nv-6MZs&si=Z-B-iRNKb4SbfkyE" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-            <!-- soundcloud -->
-            <a href="https://soundcloud.com/volugar/spy-x-family-ending-full-comedy-by-gen-hoshino?in=shibuyaa/sets/enath&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank" class="beats-card-link soundcloud" title="Soundcloud link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- worldismine -->
-        <div class="beats-card jpop electropop vocaloid">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/world-is-mine.jpg" target="images" class="beats-card-img">
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-              src="https://open.spotify.com/embed/track/56J90MLqOvuDhy8WIA46LC?utm_source=generator&theme=0"
-              width="100%" height="152" frameBorder="0" allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"></iframe>
-            <img src="../assets/music-thumb/world-is-mine.jpg" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://www.supercell.jp/english.html" target="_blank" class="beats-card-title">
-                <span class="beats-card-title-text jap">
-                  ワールドイズマイン (CPK! Remix)
-                </span>
-                <span class="beats-card-title-eng-text">
-                  World Is Mine (CPK! Remix)
-                </span>
-              </a>
-              <a href="https://www.supercell.jp/english.html" target="_blank" class="beats-card-artist">
-                <span class="beats-card-artist-text">
-                  ryo (supercell), Hatsune Miku
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  ryo (supercell), Hatsune Miku
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div title="Album">Cpk! Remix - EP</div>
-                <div class="beats-card-album-date-seperator"></div>
-                <div>January 23, 2026</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>J-pop</div>
-                <div>Electropop</div>
-                <div>Vocaloid</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              <q>World Is Mine (CPK! Remix)</q> is a 2026 remix of the classic
-              ryo (supercell) & Hatsune Miku song, released on January 23,
-              2026, as part of the Cpk! Remix - EP by Cosmic Princess Kaguya!.
-            </div>
-          </div>
-          <div class="beats-card-links">
-            <!-- spotify -->
-            <a href="https://open.spotify.com/track/56J90MLqOvuDhy8WIA46LC?si=a1d386cbc17d4ce4" target="_blank"
-              class="beats-card-link spotify" title="Spotify link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z" />
-              </svg>
-            </a>
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=wcE7BJ64u4U&si=ehYDwR4vFz6gFlpN" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-            <!-- soundcloud -->
-            <a href="https://soundcloud.com/zapayowayowa/ryo-supercell-world-is-mine?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-              target="_blank" class="beats-card-link soundcloud" title="Soundcloud link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- sparkle -->
-        <div class="beats-card fingerstyle acoustic instrumental">
-          <a href="../assets/vinyl.png" target="images" class="beats-card-vinyl">
-            <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
-          </a>
-          <a href="../assets/music-thumb/sparkle.png" target="images" class="beats-card-img">
-            <audio src="../assets/audio/sparkle.mp3" controls type="audio/mpeg"></audio>
-            <img src="../assets/music-thumb/sparkle.png" alt="Beat Image" title="Beat Image" />
-          </a>
-          <div class="beats-card-info">
-            <div class="beats-card-title-artist-content">
-              <a href="https://music.youtube.com/channel/UCmgLtrFZhrVdW7SyrQ8LYXA?si=gUIO0rmxowsQzvP3" target="_blank"
-                class="beats-card-title">
-                <span class="beats-card-title-text jap">
-                  スパークル - Fingerstyle Guitar
-                </span>
-                <span class="beats-card-title-eng-text">
-                  Sparkle - Fingerstyle Guitar
-                </span>
-              </a>
-              <a href="https://music.youtube.com/channel/UCmgLtrFZhrVdW7SyrQ8LYXA?si=gUIO0rmxowsQzvP3" target="_blank"
-                class="beats-card-artist">
-                <span class="beats-card-artist-text jap">
-                  RADWIMPS, Edward Ong
-                </span>
-                <span class="beats-card-artist-eng-text">
-                  RADWIMPS, Edward Ong
-                </span>
-              </a>
-            </div>
-            <div class="beats-card-stat">
-              <div class="beats-card-album-date">
-                <div>July 10, 2021</div>
-              </div>
-              <span class="beats-card-genre">
-                <div>Fingerstyle</div>
-                <div>Acoustic</div>
-                <div>Instrumental</div>
-              </span>
-            </div>
-            <div class="beats-card-description">
-              Featuring a 4th-fret capo. Sparkle instrumental version is known
-              for its emotive and technical arranglement with "let ring"
-              instructions, harmonics, and tapping techniques.
-            </div>
-          </div>
-          <div class="beats-card-links one">
-            <!-- youtube -->
-            <a href="https://music.youtube.com/watch?v=w-tYngyVXLM&si=GUF33lTHX_47Bcgp" target="_blank"
-              class="beats-card-link youtube" title="Youtube link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                <path
-                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- next song card here -->
+  <body>
+    <header>
+      <div class="topbar-header-contents" id="topbar">
+        <span class="topbar-logo">
+          <a href="../index.html"> JGNV </a>
+        </span>
+        <nav>
+          <a href="../index.html" class="article-link">Home</a>
+          <a href="biography.html" class="article-link">Biography</a>
+          <a href="blogs.html" class="article-link">Blogs</a>
+          <a href="medias.html" class="article-link active">Medias</a>
+          <a href="photo-gallery.html" class="article-link">Galleria</a>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer>
-    <p>
-      &copy; 2025 By me of course <mark>Valencerina</mark>. All rights
-      reserved.
-    </p>
-  </footer>
-</body>
+    <main>
+      <section class="header-section">
+        <a href="medias.html" class="back-button">Back to Medias</a>
+        <h1>Liked Music</h1>
+      </section>
+      <section class="beats-section">
+        <div class="beats-card-container">
+          <!-- deepindigo -->
+          <div class="beats-card jpop indie shimokita">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/deep-indigo.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/6BV77pE4JyUQUtaqnXeKa5?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/deep-indigo.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://yorushika.com/?lang=en"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text jap"> 藍二乗 </span>
+                  <span class="beats-card-title-eng-text"> Deep Indigo </span>
+                </a>
+                <a
+                  href="https://yorushika.com/?lang=en"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text jap"> ヨルシカ </span>
+                  <span class="beats-card-artist-eng-text"> Yorushika </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div title="Album">Moonlight</div>
+                  <div class="beats-card-album-date-seperator"></div>
+                  <div>December 27, 2018</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>J-pop</div>
+                  <div>Indie Rock</div>
+                  <div>shimokita-kei</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                The title <b>藍二乗 (Ai Nijou)</b> translates to
+                <q>indigo squared</q>. The use of 藍 (ai) as the japanese word
+                for indigo, sounding like <q>love</q> (愛) or <q>grief</q> (哀).
+                It is also to allude to the imaginary number i.
+              </div>
+            </div>
+            <div class="beats-card-links">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/album/6kfp9VKKNeeXdGROLCNYjd?si=cxbSgJh9RMG1WgWA1pfXYg"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=4MoRLTAJY_0&si=21y-rCFBngCT13Ua"
+                target="_blank"
+                class="beats-card-link youtube"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+              <!-- soundcloud -->
+              <a
+                href="https://soundcloud.com/second-copy/yorushika-blur?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="beats-card-link soundcloud"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
 
+          <!-- sugarsong -->
+          <div class="beats-card jpop pop-rock alternative domestic">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/sugar-song-to-bitter-step.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/6bfjEGSR7DyC8MK8cp3ZCp?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/sugar-song-to-bitter-step.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://unison-s-g.com/"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text jap">
+                    シュガーソングとビターステップ
+                  </span>
+                  <span class="beats-card-title-eng-text">
+                    Sugar Song to Bitter Step
+                  </span>
+                </a>
+                <a
+                  href="https://unison-s-g.com/"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text">
+                    UNISON SQUARE GARDEN
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    UNISON SQUARE GARDEN
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div title="Album">Dr.Izzy</div>
+                  <div class="beats-card-album-date-seperator"></div>
+                  <div>May 20, 2015</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>J-pop</div>
+                  <div>Pop Rock</div>
+                  <div>Alternative Rock</div>
+                  <div>Domestic Rock</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                Known for its upbeat, chaotic jazz-fusion-influenced rock sound.
+                It became a massive hit, peaking at number 1 on the Billboard
+                Japan Hot 100. It is widely known as the first ending theme for
+                the series "Blood Blockade Battlefront"
+              </div>
+            </div>
+            <div class="beats-card-links two">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/6bfjEGSR7DyC8MK8cp3ZCp?si=271cc3480dca4f81"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=mFNFmnYio90&si=JKNZI2B8h5Dd5uep"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- pompei -->
+          <div class="beats-card classical">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/pompeii.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/2jp9d2rVViwwpfHDhWps2v?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/pompeii.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://yorushika.com/?lang=en"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text"> Pompeii MMXXIII </span>
+                  <span class="beats-card-title-eng-text">
+                    Pompeii MMXXIII
+                  </span>
+                </a>
+                <a
+                  href="https://yorushika.com/?lang=en"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text">
+                    Bastille & Hans Zimmer
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    Bastille & Hans Zimmer
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div>September 1, 2023</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>Classical</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                <q>Pompeii MMXXIII</q> is a 10th-anniversary reimagining of
+                Bastille’s 2013 hit, featuring Hans Zimmer and the BBC National
+                Orchestra of Wales.
+              </div>
+            </div>
+            <div class="beats-card-links">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/2jp9d2rVViwwpfHDhWps2v?si=7f355c5d7dc94e81"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=pgS-fLS5eQQ&si=ycUbZzGIjYiY_DEx"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+              <!-- soundcloud -->
+              <a
+                href="https://soundcloud.com/bastilleuk/pompeii-mmxxiii?si=558a98e263564afcbbedb8517ef89352&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="beats-card-link soundcloud"
+                title="Soundcloud link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- chocomint -->
+          <div class="beats-card pop vocaloid vocasynth">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/chocomint.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/1P1RQdvZS4GHKFr5zRsYAR?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/chocomint.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://gyari.com/"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text jap">
+                    絶対にチョコミントを食べるアオイチャン
+                  </span>
+                  <span class="beats-card-title-eng-text">
+                    Aoi-chan Who Eats ChocoMint No Matter What
+                  </span>
+                </a>
+                <a
+                  href="https://gyari.com/"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text jap">
+                    GYARI (ココアシガレットP)
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    GYARI (Cocoa Cigarette P)
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div title="Album">Chocomintopia</div>
+                  <div class="beats-card-album-date-seperator"></div>
+                  <div>August 9, 2019</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>Pop</div>
+                  <div>Vocaloid</div>
+                  <div>Vocasynth</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                Humorous, upbeat track about Aoi-chan eating chocolate mint ice
+                cream for every meal, despite Akane's confusion. It features
+                catchy melodies and a song driven by characters featuring
+                animated PVs.
+              </div>
+            </div>
+            <div class="beats-card-links">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/1P1RQdvZS4GHKFr5zRsYAR?si=ae2fcbfa10654fee"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=WEgsPVFyhGU&si=pWOJA6M2u7cWWXHd"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+              <!-- soundcloud -->
+              <a
+                href="https://soundcloud.com/shirohalily/gyari-aoi-chan-is-going-to-eat-choc-mint-ice-cream-no-matter-what?si=bc65e19ecbc6454babc8c70b29231459&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="beats-card-link soundcloud"
+                title="Soundcloud link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- injesusname -->
+          <div class="beats-card urbangospel">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/in-jesus-name.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/08MelkdJqbh68USUjAfr2T?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/in-jesus-name.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://israelandnewbreed.com/"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text"> In Jesus Name </span>
+                  <span class="beats-card-title-eng-text"> In Jesus Name </span>
+                </a>
+                <a
+                  href="https://israelandnewbreed.com/"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text">
+                    Israel & New Breed
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    Israel & New Breed
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div title="Album">Alive in Asia</div>
+                  <div class="beats-card-album-date-seperator"></div>
+                  <div>June 23, 2015</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>Urban Gospel</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                While famously covered by Israel & New Breed on Covered: Alive
+                in Asia, the song was co-written by Israel Houghton and Darlene
+                Zschech, appearing on Zschech's 2013 live album Revealing Jesus.
+                It is a frequently used worship song often played at a high
+                energy, as seen in performances at Lakewood Church.
+              </div>
+            </div>
+            <div class="beats-card-links two">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/08MelkdJqbh68USUjAfr2T?si=5a6f14876087404e"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=qehwr2MMTqg&si=ul_d8Li6-tXbHxt1"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- comedy -->
+          <div class="beats-card jpop pop">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/comedy.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/5SuOikwiRyPMVoIQDJUgSV?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/comedy.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://www.hoshinogen.com/"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text"> Comedy </span>
+                  <span class="beats-card-title-eng-text"> Comedy </span>
+                </a>
+                <a
+                  href="https://www.hoshinogen.com/"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text jap"> 星野源 </span>
+                  <span class="beats-card-artist-eng-text"> Gen Hoshino </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div>April 8, 2022</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>J-pop</div>
+                  <div>Pop</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                Frequently listed among his top, known for its lighthearted,
+                melodic, and heardfelt style. It was later included on the
+                ending theme for the series SPYxFAMILY.
+              </div>
+            </div>
+            <div class="beats-card-links">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=d8f67fbc30164b35"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=URR_Nv-6MZs&si=Z-B-iRNKb4SbfkyE"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+              <!-- soundcloud -->
+              <a
+                href="https://soundcloud.com/volugar/spy-x-family-ending-full-comedy-by-gen-hoshino?in=shibuyaa/sets/enath&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="beats-card-link soundcloud"
+                title="Soundcloud link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- worldismine -->
+          <div class="beats-card jpop electropop vocaloid">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/world-is-mine.jpg"
+              target="images"
+              class="beats-card-img"
+            >
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/56J90MLqOvuDhy8WIA46LC?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+              <img
+                src="../assets/music-thumb/world-is-mine.jpg"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://www.supercell.jp/english.html"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text jap">
+                    ワールドイズマイン (CPK! Remix)
+                  </span>
+                  <span class="beats-card-title-eng-text">
+                    World Is Mine (CPK! Remix)
+                  </span>
+                </a>
+                <a
+                  href="https://www.supercell.jp/english.html"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text">
+                    ryo (supercell), Hatsune Miku
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    ryo (supercell), Hatsune Miku
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div title="Album">Cpk! Remix - EP</div>
+                  <div class="beats-card-album-date-seperator"></div>
+                  <div>January 23, 2026</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>J-pop</div>
+                  <div>Electropop</div>
+                  <div>Vocaloid</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                <q>World Is Mine (CPK! Remix)</q> is a 2026 remix of the classic
+                ryo (supercell) & Hatsune Miku song, released on January 23,
+                2026, as part of the Cpk! Remix - EP by Cosmic Princess Kaguya!.
+              </div>
+            </div>
+            <div class="beats-card-links">
+              <!-- spotify -->
+              <a
+                href="https://open.spotify.com/track/56J90MLqOvuDhy8WIA46LC?si=a1d386cbc17d4ce4"
+                target="_blank"
+                class="beats-card-link spotify"
+                title="Spotify link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M320 72C183 72 72 183 72 320C72 457 183 568 320 568C457 568 568 457 568 320C568 183 457 72 320 72zM420.7 436.9C416.5 436.9 413.9 435.6 410 433.3C347.6 395.7 275 394.1 203.3 408.8C199.4 409.8 194.3 411.4 191.4 411.4C181.7 411.4 175.6 403.7 175.6 395.6C175.6 385.3 181.7 380.4 189.2 378.8C271.1 360.7 354.8 362.3 426.2 405C432.3 408.9 435.9 412.4 435.9 421.5C435.9 430.6 428.8 436.9 420.7 436.9zM447.6 371.3C442.4 371.3 438.9 369 435.3 367.1C372.8 330.1 279.6 315.2 196.7 337.7C191.9 339 189.3 340.3 184.8 340.3C174.1 340.3 165.4 331.6 165.4 320.9C165.4 310.2 170.6 303.1 180.9 300.2C208.7 292.4 237.1 286.6 278.7 286.6C343.6 286.6 406.3 302.7 455.7 332.1C463.8 336.9 467 343.1 467 351.8C466.9 362.6 458.5 371.3 447.6 371.3zM478.6 295.1C473.4 295.1 470.2 293.8 465.7 291.2C394.5 248.7 267.2 238.5 184.8 261.5C181.2 262.5 176.7 264.1 171.9 264.1C158.7 264.1 148.6 253.8 148.6 240.5C148.6 226.9 157 219.2 166 216.6C201.2 206.3 240.6 201.4 283.5 201.4C356.5 201.4 433 216.6 488.9 249.2C496.7 253.7 501.8 259.9 501.8 271.8C501.8 285.4 490.8 295.1 478.6 295.1z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=wcE7BJ64u4U&si=ehYDwR4vFz6gFlpN"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+              <!-- soundcloud -->
+              <a
+                href="https://soundcloud.com/zapayowayowa/ryo-supercell-world-is-mine?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                target="_blank"
+                class="beats-card-link soundcloud"
+                title="Soundcloud link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M640.2 362.6C638.9 385.7 628.7 407.4 611.8 423.1C594.9 438.8 572.6 447.5 549.5 447.2L331.5 447.2C326.7 447.2 322.1 445.2 318.7 441.8C315.3 438.4 313.4 433.8 313.4 429L313.4 194.2C313.2 190.2 314.3 186.2 316.5 182.8C318.7 179.4 321.8 176.7 325.5 175.1C325.5 175.1 345.6 161.2 387.8 161.2C413.6 161.2 438.9 168.1 461.1 181.3C478.4 191.5 493.4 205.1 505.2 221.4C517 237.7 525.2 256.2 529.4 275.8C536.9 273.7 544.7 272.6 552.5 272.6C564.2 272.5 575.8 274.8 586.7 279.3C597.6 283.8 607.2 290.6 615.4 299C623.6 307.4 630 317.3 634.3 328.3C638.6 339.3 640.6 350.9 640.2 362.6zM286.2 209.1C286.3 208.1 286.2 207.1 285.9 206.2C285.6 205.3 285.1 204.4 284.4 203.6C283.7 202.8 282.9 202.3 282 201.9C280.2 201.1 278 201.1 276.2 201.9C275.3 202.3 274.5 202.9 273.8 203.6C273.1 204.3 272.6 205.2 272.3 206.2C272 207.2 271.9 208.1 272 209.1C266 288 261.4 362 272 440.7C272.2 442.4 273 444 274.3 445.2C276.9 447.6 281.1 447.6 283.7 445.2C285 444 285.8 442.4 286 440.7C297.3 361.3 292.6 288.7 286 209.1L286.2 209.1zM242.2 236.4C242 234.6 241.1 232.9 239.8 231.7C238.5 230.5 236.7 229.8 234.8 229.8C232.9 229.8 231.2 230.5 229.8 231.7C228.4 232.9 227.6 234.6 227.4 236.4C219.5 304.3 219.5 372.9 227.4 440.8C227.7 442.6 228.6 444.2 229.9 445.3C231.2 446.4 233 447.1 234.7 447.1C236.4 447.1 238.2 446.5 239.5 445.3C240.8 444.1 241.7 442.5 242 440.8C250.8 373 250.8 304.3 242.1 236.4L242.2 236.4zM197.9 229.5C197.7 227.7 196.9 226.1 195.6 224.9C194.3 223.7 192.6 223.1 190.8 223.1C189 223.1 187.3 223.8 186 224.9C184.7 226 183.9 227.7 183.7 229.5C177 301.5 173.5 368.8 183.7 440.6C183.7 442.5 184.4 444.3 185.8 445.6C187.2 446.9 188.9 447.7 190.8 447.7C192.7 447.7 194.5 447 195.8 445.6C197.1 444.2 197.9 442.5 197.9 440.6C208.4 367.8 205.2 302.4 198 229.5L197.9 229.5zM153.9 250.1C153.9 248.2 153.1 246.3 151.8 244.9C150.5 243.5 148.6 242.8 146.6 242.8C144.6 242.8 142.8 243.6 141.4 244.9C140 246.2 139.3 248.1 139.3 250.1C131.2 313.4 131.2 377.6 139.3 440.9C139.5 442.7 140.3 444.3 141.7 445.5C143.1 446.7 144.8 447.4 146.5 447.4C148.2 447.4 150 446.7 151.3 445.5C152.6 444.3 153.5 442.7 153.7 440.9C162.5 377.6 162.6 313.4 154 250.1L153.9 250.1zM109.4 297.7C109.4 295.8 108.6 293.9 107.3 292.6C106 291.3 104.1 290.5 102.2 290.5C100.3 290.5 98.4 291.3 97.1 292.6C95.8 293.9 95 295.8 95 297.7C84.5 346.9 89.5 391.6 95.4 441.3C95.7 442.9 96.5 444.4 97.7 445.5C98.9 446.6 100.5 447.2 102.2 447.2C103.9 447.2 105.4 446.6 106.7 445.5C108 444.4 108.8 443 109 441.3C115.6 390.9 120.6 347.2 109.4 297.7zM65.3 290.2C65.1 288.4 64.2 286.7 62.9 285.4C61.6 284.1 59.7 283.5 57.9 283.5C56.1 283.5 54.3 284.2 52.9 285.4C51.5 286.6 50.7 288.3 50.5 290.2C41.2 340.4 44.3 384.6 50.8 434.7C51.5 442.3 64.4 442.2 65.2 434.7C72.4 383.8 75.7 340.9 65.5 290.2L65.3 290.2zM20.7 314.8C20.5 313 19.6 311.3 18.3 310C17 308.7 15.1 308.1 13.3 308.1C11.5 308.1 9.7 308.8 8.3 310C6.9 311.2 6 312.9 5.9 314.8C-2.6 348.5 0 376.4 6.5 410.2C6.7 411.9 7.5 413.5 8.8 414.6C10.1 415.7 11.7 416.4 13.5 416.4C15.3 416.4 16.9 415.8 18.2 414.6C19.5 413.4 20.3 411.9 20.5 410.2C28 375.7 31.7 348.4 20.9 314.8L20.7 314.8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- sparkle -->
+          <div class="beats-card fingerstyle acoustic instrumental">
+            <a
+              href="../assets/vinyl.png"
+              target="images"
+              class="beats-card-vinyl"
+            >
+              <img src="../assets/vinyl.png" alt="Vinyl image" title="Vinyl" />
+            </a>
+            <a
+              href="../assets/music-thumb/sparkle.png"
+              target="images"
+              class="beats-card-img"
+            >
+              <audio
+                src="../assets/audio/sparkle.mp3"
+                controls
+                type="audio/mpeg"
+              ></audio>
+              <img
+                src="../assets/music-thumb/sparkle.png"
+                alt="Beat Image"
+                title="Beat Image"
+              />
+            </a>
+            <div class="beats-card-info">
+              <div class="beats-card-title-artist-content">
+                <a
+                  href="https://music.youtube.com/channel/UCmgLtrFZhrVdW7SyrQ8LYXA?si=gUIO0rmxowsQzvP3"
+                  target="_blank"
+                  class="beats-card-title"
+                >
+                  <span class="beats-card-title-text jap">
+                    スパークル - Fingerstyle Guitar
+                  </span>
+                  <span class="beats-card-title-eng-text">
+                    Sparkle - Fingerstyle Guitar
+                  </span>
+                </a>
+                <a
+                  href="https://music.youtube.com/channel/UCmgLtrFZhrVdW7SyrQ8LYXA?si=gUIO0rmxowsQzvP3"
+                  target="_blank"
+                  class="beats-card-artist"
+                >
+                  <span class="beats-card-artist-text jap">
+                    RADWIMPS, Edward Ong
+                  </span>
+                  <span class="beats-card-artist-eng-text">
+                    RADWIMPS, Edward Ong
+                  </span>
+                </a>
+              </div>
+              <div class="beats-card-stat">
+                <div class="beats-card-album-date">
+                  <div>July 10, 2021</div>
+                </div>
+                <span class="beats-card-genre">
+                  <div>Fingerstyle</div>
+                  <div>Acoustic</div>
+                  <div>Instrumental</div>
+                </span>
+              </div>
+              <div class="beats-card-description">
+                Featuring a 4th-fret capo. Sparkle instrumental version is known
+                for its emotive and technical arranglement with "let ring"
+                instructions, harmonics, and tapping techniques.
+              </div>
+            </div>
+            <div class="beats-card-links one">
+              <!-- youtube -->
+              <a
+                href="https://music.youtube.com/watch?v=w-tYngyVXLM&si=GUF33lTHX_47Bcgp"
+                target="_blank"
+                class="beats-card-link youtube"
+                title="Youtube link"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- next song card here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 By me of course <mark>Valencerina</mark>. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
 </html>
