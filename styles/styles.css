@@ -1,4 +1,5 @@
 :root {
+  --primary-color-50: #85535f;
   --primary-color-100: #663642;
   --primary-color-200: #4c252e;
   --primary-color: var(--primary-color-100);
@@ -193,6 +194,7 @@ mark {
     gap: 1.25em;
     align-items: center;
     margin-left: 2.5em;
+    flex-wrap: wrap;
 
     & a {
       text-decoration: none;

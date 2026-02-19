@@ -1,21 +1,68 @@
 main {
-  max-width: 1280px;
+  padding: 0;
+}
+
+body {
+  background: url("../assets/home-tile.png") repeat;
+}
+
+header {
+  background-color: var(--transparent);
+}
+
+mark {
+    color: var(--accent-color-100)
 }
 
 .header-section {
-  margin-top: 2em;
+  margin-top: 20vh;
   text-align: center;
+  color: var(--text-light);
 }
 
 .media-section {
   display: flex;
   flex-direction: row;
-  gap: 3em;
   flex-wrap: wrap;
+  overflow: hidden;
   height: 100%;
   justify-content: center;
   margin-top: 7em;
   align-items: center;
+  width: 100%;
+  position: relative;
+  background-color: var(--base-color-100);
+  gap: 2.5em;
+  border-top: 5px solid var(--base-color-400);
+  border-bottom: 5px solid var(--base-color-400);
+  box-shadow: var(--primary-color-200) 0px 0px 6em 0px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 5px dashed var(--base-color-400);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-top: 5px dashed var(--base-color-400);
+  }
+
+  & .media-sep {
+    width: 3px;
+    border-radius: 3px;
+    height: 5em;
+    background-color: var(--base-color-400);
+  }
 
   & .media-card {
     width: fit-content;
@@ -25,6 +72,9 @@ main {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
     & a {
       text-decoration: none;
       width: 100%;
@@ -44,12 +94,13 @@ main {
       justify-content: center;
       gap: 2em;
       padding: 2em;
-      background-color: var(--base-color-50);
       border-radius: 15px;
       transition: all 0.18s ease;
+      border: 2px solid var(--base-color-100);
 
       & svg {
         stroke: var(--primary-color-100);
+        transition: all 0.18s ease;
       }
     }
     & h2 {
@@ -59,7 +110,7 @@ main {
       text-align: center;
       position: absolute;
       bottom: 0;
-      translate: 0 2.5em;
+      translate: 0 1em;
       color: var(--text-dark);
       font-family: var(--body-font);
       transition: all 0.18s ease;
@@ -79,9 +130,14 @@ main {
       }
     }
     &:hover {
-      transform: scale(1.03);
+      & div {
+        box-shadow: 0 0 1em var(--base-color-400);
+      }
+      & svg {
+        stroke: var(--primary-color-200);
+      }
       & h2 {
-        translate: 0 3em;
+        translate: 0 0.9em;
         opacity: 1;
 
         &::after {
