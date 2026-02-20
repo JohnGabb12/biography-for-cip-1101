@@ -13,6 +13,7 @@ main {
   align-items: center;
   width: 100%;
   margin-bottom: 9em;
+
   & h3 {
     text-align: center;
     margin-bottom: 0;
@@ -187,7 +188,7 @@ main {
       aspect-ratio: 16/9;
       height: 100%;
 
-      & iframe {
+      & video {
         width: 100%;
         aspect-ratio: 16/9;
         height: auto;
