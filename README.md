@@ -21,9 +21,28 @@ Heard that convenience stores in Japan is too convenient. I want to taste the ex
 Felt it the first time it toured in the Philippines. 20XX means that this expo is not just one but many across the globe at every year. Since it is not a static place, why not visit every single time theres an opportunity?
 
 5. Counter Strike Major Tournaments
+As a man who played Counter Strike since its golden days, watching every tournaments like a sports channel. It is a dream to go to a tournament as an audience watching the stage itself not limited to the screen.
 
 # Bucket List
 Bucket List discussing your experiences or achievements that you wanted to accomplish during your lifetime.
+
+Participate 2 more competitions related to programming.
+Accomplish a back-end application with Golang as a techstack.
+Explore manila with my brother.
+Get a solo bedroom.
+Acquire experiences inline with the career.
+Acquire a Job.
+Visit Georgia's Bakeries.
+Eat Georgian bread.
+Eat Paris' croissant.
+Visit Tokyo's Comiket.
+Visit Japan's Konbini.
+Get at least 3 doujinshi from the Comiket.
+Eat the "Tamago Sando" from the Konbini.
+Acquire an authentic Miku plush.
+Go to a hologram Miku concert in Japan.
+Attend a Counter Strike Major Tournament.
+
 
 # Landing page improvements
 Landing Page that contains "About Me" page, 10-20 seconds video reel about the author and the navigation links to your website.
