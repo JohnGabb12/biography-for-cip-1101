@@ -29,6 +29,7 @@ Bucket List discussing your experiences or achievements that you wanted to accom
 Participate 2 more competitions related to programming.
 Accomplish a back-end application with Golang as a techstack.
 Explore manila with my brother.
+Purchase a Nothing Phone as a back-up phone to use.
 Get a solo bedroom.
 Acquire experiences inline with the career.
 Acquire a Job.
