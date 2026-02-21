@@ -2,6 +2,8 @@
   --primary-color-50: #85535f;
   --primary-color-100: #663642;
   --primary-color-200: #4c252e;
+  --primary-color-300: #32191a;
+  --primary-color-400: #1a0d0d;
   --primary-color: var(--primary-color-100);
 
   --secondary-color-50: #d8c1e0;
