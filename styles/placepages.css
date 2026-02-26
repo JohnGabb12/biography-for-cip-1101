@@ -45,7 +45,7 @@ main {
   & .location-text {
     position: absolute;
     left: 4.3%;
-    top: calc(30% + 7rem);
+    bottom: 30%;
     color: var(--text-light);
     opacity: 0.9;
     font-style: italic;

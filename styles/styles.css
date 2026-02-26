@@ -158,6 +158,51 @@ mark {
   color: var(--text-light-mark);
 }
 
+ul {
+  list-style: none;
+  padding: 1em;
+  padding-top: 2em;
+  min-width: 50%;
+  width: fit-content;
+  position: relative;
+  margin-top: 2em;
+  border-radius: 15px;
+  border: 2px solid var(--base-color-400);
+  background-color: var(--base-color-200);
+
+  & span {
+    display: block;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--heading-font);
+    position: absolute;
+    top: -0.75em;
+    background-color: var(--base-color-50);
+    padding: 0 1em;
+    border-radius: 1em;
+    border: 2px solid var(--base-color-400);
+  }
+  li {
+    position: relative;
+    margin-left: 2em;
+
+    &::before {
+      content: "";
+      background-color: var(--accent-color);
+      display: inline-block;
+      width: 3px;
+      height: 40%;
+      left: -1em;
+      rotate: 90deg;
+      bottom: 30%;
+      border-radius: 1.5px;
+      position: absolute;
+      
+    }
+  }
+}
+
 .topbar-webname {
   margin-left: 2rem;
   font-size: 1rem;
