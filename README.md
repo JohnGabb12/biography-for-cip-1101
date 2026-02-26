@@ -27,8 +27,13 @@ Script:
   - Explore JOHN.gnv 
   - Contact Me
 
+- TECHSTACK UPDATE
+
 ## Places improvements
 - Increase quality of place picking image
 
 ## Galleria update
 Additionals of the images
+
+## Biography update
+Replace "Ink Of My Own Story" title to About Author
