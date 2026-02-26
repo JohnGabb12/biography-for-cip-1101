@@ -716,6 +716,173 @@ header {
   backdrop-filter: blur(4px);
 }
 
+.media-hero {
+  width: 100%;
+  background-color: var(--base-color-300);
+  overflow: hidden;
+  position: relative;
+
+  & a {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    & img {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+  }
+
+  & h2 {
+    font-size: 7rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 0;
+    text-align: center;
+    z-index: 2;
+  }
+
+  & p {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .media-hero-contents {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10em;
+    gap: 2em;
+    position: relative;
+
+    & .media-hero-left {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      height: 100%;
+      gap: 1em;
+      margin-top: 6em;
+      position: relative;
+      width: 50%;
+      height: 100%;
+    }
+
+    & .media-hero-right {
+      margin-top: 10em;
+      padding-top: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+
+      & .media-button {
+        width: fit-content;
+        height: 36px;
+        text-decoration: none;
+        color: var(--text-light);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: inherit;
+
+        &:hover div.b {
+          margin-top: -36px;
+          transition: 0.18s all ease;
+        }
+
+        & div.a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          text-wrap: nowrap;
+          transition: 0.18s all ease;
+        }
+
+        & span.aa {
+          background-color: var(--secondary-color-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 15px;
+          border-radius: 20px;
+          width: fit-content;
+        }
+
+        & div.aa {
+          background-color: var(--secondary-color-100);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px;
+          border-radius: 20px;
+          width: fit-content;
+
+          & svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--text-light);
+          }
+        }
+      }
+    }
+  }
+}
+
+.places-hero {
+  width: 100%;
+  background-color: var(--base-color-200);
+
+  & h2 {
+    font-size: 7rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  & p {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .places-hero-contents {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+    & .places-hero-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding: 10em 0;
+    }
+
+    & .places-hero-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      padding: 10em 0;
+    }
+  }
+}
+
 .galleria-hero {
   width: 100%;
 
