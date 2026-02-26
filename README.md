@@ -37,3 +37,19 @@ Additionals of the images
 
 ## Biography update
 Replace "Ink Of My Own Story" title to About Author
+._________.
+|         |                 Know
+|   IMG   |                 JOHN.GNV
+|   IMG   |                 JOHN GABRIELLE N. VALENCERINA
+|_________|                 ----------- ASPIRING SOFT DEV
+
+            "As developers always say: Push and pray."
+
+Specs                                   Expertise
+- 20 Years Enjoying Life                - Full-Stack Web Development
+- Created in Saudi Arabia               - UI/UX & Graphic Design
+- Currently on Philippine Grounds       - Software Architecture
+- BS Computer Science at UE - Manila    - Competitive Programming
+- Develop, Design, and Innovate
+
+                  v Scroll down for History v
