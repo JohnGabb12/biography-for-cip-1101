@@ -13,16 +13,17 @@ Script:
 - Birthplace & Living
   - Born in SA
   - Currently in PH
-- Techstacks
-  - MERN / PERN
-  - TALL
-  - and more
+- Expertise
+  - Full-Stack Web Development
+  - UI/UX & Graphic Design
+  - Software Architecture
+  - Competitive Programming
 - Likes
   - Strawberry Yogurt Milkshake
   - Developing Games
 - Dislikes
   - Ketchup
-  - Gelatin
+  - Gelatin Foods
 - Outro
   - Explore JOHN.gnv 
   - Contact Me
