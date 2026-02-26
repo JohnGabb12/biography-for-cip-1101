@@ -174,21 +174,21 @@ header {
 .hero-picture {
   position: relative;
 
-  &:hover {
-    & .hero-image {
-      opacity: 0;
-    }
-    & .hero-video {
-      opacity: 1;
-    }
+  &:hover .hero-video {
+    opacity: 0;
   }
+
+  &:hover .hero-image {
+    opacity: 1;
+  }
+
 
   & .hero-video {
     position: absolute;
     aspect-ratio: 3/4;
     width: 100%;
     bottom: 0;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
   }
 }
@@ -201,6 +201,7 @@ header {
   position: absolute;
   right: -20rem;
   bottom: -3rem;
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
