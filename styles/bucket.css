@@ -16,6 +16,7 @@ main {
   position: relative;
   border: 2px solid var(--base-color-400);
   overflow: hidden;
+  z-index: 0;
 
   & .header-section {
     box-sizing: border-box;
@@ -153,4 +154,62 @@ main {
       }
     }
   }
+}
+
+.images-section {
+  z-index: 10;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  & a { text-decoration: none; }
+  & figure {
+    padding: 1em;
+    background-color: var(--base-color-50);
+    display: inline-block;
+    transition: all 0.18s ease;
+    border-radius: 1px;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    &:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    & img {
+      width: 10em;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    & figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+      color: var(--text-dark);
+    }
+  }
+}
+.meiji {
+  top: 14em;
+  right: 10%;
+  rotate: -5deg;
+}
+.paris {
+  top: 29em;
+  left: 6%;
+  rotate: 7deg;
+}
+.leetcode {
+  top: 45em;
+  right: 8%;
+  rotate: 10deg;
+}
+.miku {
+  top: 80em;
+  left: 6%;
+  rotate: -5deg;
 }

@@ -27,9 +27,6 @@ Script:
   - Explore JOHN.gnv 
   - Contact Me
 
-## Bucketlist improvements
-- Bucket list images
-
 ## Places improvements
 - Increase quality of place picking image
 
