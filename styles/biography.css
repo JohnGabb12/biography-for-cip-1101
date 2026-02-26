@@ -61,6 +61,17 @@
   }
 }
 
+@media (max-width: 980px) {
+  .biography-title .img-name {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .specs-expertise {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -68,16 +79,15 @@
   gap: 1em;
   margin-top: 10em;
   position: relative;
+  box-sizing: border-box;
 
   & .quote {
     font-size: 1.5rem;
     line-height: 2rem;
     font-style: italic;
     text-align: center;
-    max-width: 800px;
     background-color: var(--base-color-200);
     padding: 50px;
-    width: 100%;
     border-radius: 15px;
     color: var(--primary-color-100);
   }
@@ -85,7 +95,7 @@
   & .quote-author {
     position: absolute;
     bottom: 2em;
-    right: 0;
+    right: 1em;
 
     &::before {
       content: "— ";

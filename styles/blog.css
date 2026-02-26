@@ -109,11 +109,11 @@ hr {
 
 .more-like-this {
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .more-like-this a {
@@ -127,7 +127,7 @@ hr {
   gap: 0.5rem;
   border: 2px solid var(--base-color-200);
   border-radius: 15px;
-  width: 100%;
+  width: 30rem;
   overflow: hidden;
   transition: all 0.2s ease;
   color: var(--text-dark);
@@ -174,14 +174,20 @@ hr {
   font-weight: 900;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 980px) {
   .more-like-this {
-    flex-direction: row;
-  }
-  .more-like-this-card {
-    width: 30rem;
+    flex-direction: column;
+    gap: 2em;
   }
 }
+
+/* @media (min-width: 768px) {
+  .more-like-this {
+  }
+  .more-like-this-card {
+    
+  }
+} */
 
 main {
   min-height: 100vh;

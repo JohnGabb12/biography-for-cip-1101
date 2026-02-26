@@ -147,3 +147,15 @@ mark {
     }
   }
 }
+
+@media (max-width: 980px) {
+  .media-section {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 1em;
+  }
+
+  .media-section .media-sep {
+    display: none;
+  }
+}
